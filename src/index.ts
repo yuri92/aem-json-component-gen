@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { IComponent } from './models/interfaces/component.interface';
+import { ComponentHtmlTemplate } from './models/templates/component-html.template';
 import { ContentXmlTemplate } from './models/templates/content-xml.template';
 import { cqEditConfigTemplate } from './models/templates/cq-edit-config.template';
 import { DialogTemplate } from './models/templates/dialog.template';
@@ -27,6 +28,9 @@ cmpToBuild.forEach(component => {
 
     fs.mkdirSync(dialogFolder);
     fs.writeFileSync(dialogFile, new DialogTemplate(component).xml)
+
+    //creo il file html
+    fs.writeFileSync(path.join(componentFolder, component.name + '.html'), new ComponentHtmlTemplate(component).xml);
 
 });
 

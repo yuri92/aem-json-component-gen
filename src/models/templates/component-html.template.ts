@@ -1,0 +1,20 @@
+import { IComponent } from "../interfaces/component.interface";
+
+export class ComponentHtmlTemplate {
+
+    private component: IComponent;
+
+    constructor(component: IComponent) {
+        this.component = component;
+    }
+
+    get xml() {
+        let xml = '';
+        this.component.dialog?.forEach(label => {
+            xml += '${properties.' + label.name + '}\n'
+        })
+        return xml;
+    }
+
+
+}
