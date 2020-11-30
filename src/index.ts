@@ -12,7 +12,7 @@ const jsonPath = path.join(__dirname, '..', 'json', 'components.json');
 const cmpToBuild: IComponent[] = JSON.parse(fs.readFileSync(jsonPath).toString()) as IComponent[];
 
 cmpToBuild.forEach(component => {
-    const componentFolder = path.join(__dirname, '..', 'json', component.name);
+    const componentFolder = path.join(__dirname, '..', 'json', 'generated', component.name);
     fs.rmdirSync(componentFolder, {recursive : true})
     fs.mkdirSync(componentFolder);
 
