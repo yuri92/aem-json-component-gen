@@ -2,6 +2,8 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { IComponent } from './models/interfaces/component.interface';
 import { ContentXmlTemplate } from './models/templates/content-xml.template';
+import { cqEditConfigTemplate } from './models/templates/cq-edit-config.template';
+import { DialogTemplate } from './models/templates/dialog.template';
 
 const jsonPath = path.join(__dirname, '..', 'json', 'components.json');
 
@@ -16,7 +18,15 @@ cmpToBuild.forEach(component => {
     // creato .content.xml
     fs.writeFileSync(path.join(componentFolder, '.content.xml'), new ContentXmlTemplate(component).contentXml)
 
-    
+    // creato cq_editConfig.xml
+    fs.writeFileSync(path.join(componentFolder, 'cq_editConfig.xml'), cqEditConfigTemplate);
+
+    // creo la dialog
+    const dialogFolder = path.join(componentFolder, '_cq_dialog')
+    const dialogFile = path.join(dialogFolder, '.content.xml');
+
+    fs.mkdirSync(dialogFolder);
+    fs.writeFileSync(dialogFile, new DialogTemplate(component).xml)
 
 });
 

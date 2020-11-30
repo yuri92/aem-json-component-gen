@@ -1,0 +1,91 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Form anagrafica"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <content
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title"
+                        name="./title"/>
+                    <labelClienteConCodiceFiscale
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Label 'Cliente con codice fiscale'"
+                        name="./labelClienteConCodiceFiscale"/>
+                    <labelClienteConCodiceFiscale
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Label 'Cliente senza codice fiscale'"
+                        name="./labelClienteConCodiceFiscale"/>
+                    <labelCodiceFiscale
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Label 'Codice fiscale'"
+                        name="./labelCodiceFiscale"/>
+                    <labelCognome
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Label 'Cognome'"
+                        name="./labelCognome"/>
+                    <labelNome
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Label 'Nome'"
+                        name="./labelNome"/>
+                    <labelSesso
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Label 'Sesso'"
+                        name="./labelSesso"/>
+                    <labelDataDiNascita
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Label 'Data di nascita'"
+                        name="./labelDataDiNascita"/>
+                    <labelNazioneDiNascita
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Label 'Nazione di nascita'"
+                        name="./labelNazioneDiNascita"/>
+                    <labelLuogoDiNascita
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Label 'Luogo di nascita'"
+                        name="./labelLuogoDiNascita"/>
+                    <labelProvincia
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Label 'Provincia'"
+                        name="./labelProvincia"/>
+                    <labelCittadinanza
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Label 'Cittadinanza'"
+                        name="./labelCittadinanza"/>
+                    <btnTornaIndietro
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Pulsante 'Torna Indietro'"
+                        name="./btnTornaIndietro"/>
+                    <btnContinua
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Pulsante 'Continua'"
+                        name="./btnContinua"/>
+                </items>
+            </content>
+        </items>
+    </content>
+</jcr:root>
+        
