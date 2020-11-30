@@ -1,0 +1,52 @@
+[
+    {
+        "name" : "form-anagrafica",
+        "title": "Form anagrafica",
+        "componentGroup": "LIS Tabaccai",
+        "dialog" : [
+            {
+                "fieldLabel" : "Title",
+                "name" : "title"
+            },{
+                "fieldLabel" : "Label 'Cliente con codice fiscale'",
+                "name" : "labelClienteConCodiceFiscale"
+            },{
+                "fieldLabel" : "Label 'Cliente senza codice fiscale'",
+                "name" : "labelClienteConCodiceFiscale"
+            },{
+                "fieldLabel" : "Label 'Codice fiscale'",
+                "name" : "labelCodiceFiscale"
+            },{
+                "fieldLabel" : "Label 'Cognome'",
+                "name" : "labelCognome"
+            },{
+                "fieldLabel" : "Label 'Nome'",
+                "name" : "labelNome"
+            },{
+                "fieldLabel" : "Label 'Sesso'",
+                "name" : "labelSesso"
+            },{
+                "fieldLabel" : "Label 'Data di nascita'",
+                "name" : "labelDataDiNascita"
+            },{
+                "fieldLabel" : "Label 'Nazione di nascita'",
+                "name" : "labelNazioneDiNascita"
+            },{
+                "fieldLabel" : "Label 'Luogo di nascita'",
+                "name" : "labelLuogoDiNascita"
+            },{
+                "fieldLabel" : "Label 'Provincia'",
+                "name" : "labelProvincia"
+            },{
+                "fieldLabel" : "Label 'Cittadinanza'",
+                "name" : "labelCittadinanza"
+            },{
+                "fieldLabel" : "Pulsante 'Torna Indietro'",
+                "name" : "btnTornaIndietro"
+            },{
+                "fieldLabel" : "Pulsante 'Continua'",
+                "name" : "btnContinua"
+            }
+        ]
+    }
+]
