@@ -1,6 +1,6 @@
 [
     {
-        "name" : "form-anagrafica",
+        "name" : "lis-form-anagrafica",
         "title": "Form anagrafica",
         "componentGroup": "LIS Tabaccai",
         "dialog" : [
@@ -42,6 +42,44 @@
                 "name" : "labelCittadinanza"
             },{
                 "fieldLabel" : "Pulsante 'Torna Indietro'",
+                "name" : "btnTornaIndietro"
+            },{
+                "fieldLabel" : "Pulsante 'Continua'",
+                "name" : "btnContinua"
+            }
+        ]
+    },
+    {
+        "name" : "lis-form-email-tim-card",
+        "title": "Form Email e TIM Card",
+        "componentGroup": "LIS Tabaccai",
+        "dialog" : [
+            {
+                "fieldLabel" : "Label 'Email cliente'",
+                "name" : "labelEmailCliente"
+            },{
+                "fieldLabel" : "Label 'Numero TIM'",
+                "name" : "labelNumeroTim"
+            },{
+                "fieldLabel" : "Label 'Descrizione TIM Card'",
+                "name" : "labelDescrizioneTimCard"
+            },{
+                "fieldLabel" : "Label 'ICCID della TIM Card'",
+                "name" : "labelIccidDellaTimCard"
+            },{
+                "fieldLabel" : "Label 'Nome OLO'",
+                "name" : "labelNomeOlo"
+            },{
+                "fieldLabel" : "Label 'Numero AOM'",
+                "name" : "labelNumeroAOM"
+            },{
+                "fieldLabel" : "Label 'ICCID OLO (parte fissa)'",
+                "name" : "labelIccidOloParteFissa"
+            },{
+                "fieldLabel" : "Label 'ICCID Olo (da compilare)'",
+                "name" : "labelIccidOloDaCompilare"
+            },{
+                "fieldLabel" : "Pulsante 'Torna indietro'",
                 "name" : "btnTornaIndietro"
             },{
                 "fieldLabel" : "Pulsante 'Continua'",
