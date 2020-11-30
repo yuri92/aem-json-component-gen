@@ -2,10 +2,15 @@ export interface IComponent {
     name: string;
     title: string;
     componentGroup: string;
-    dialog?: (IDialog)[] | null;
+    dialog?: (ITab)[] | null;
   }
-  export interface IDialog {
+  export interface ITab {
+    tabTitle: string;
+    fields?: (IField)[] | null;
+  }
+  export interface IField {
     fieldLabel: string;
     name: string;
+    textIsRich?: boolean;
   }
   

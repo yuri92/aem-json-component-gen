@@ -5,47 +5,58 @@
         "componentGroup": "LIS Tabaccai",
         "dialog" : [
             {
-                "fieldLabel" : "Title",
-                "name" : "title"
-            },{
-                "fieldLabel" : "Label 'Cliente con codice fiscale'",
-                "name" : "labelClienteConCodiceFiscale"
-            },{
-                "fieldLabel" : "Label 'Cliente senza codice fiscale'",
-                "name" : "labelClienteConCodiceFiscale"
-            },{
-                "fieldLabel" : "Label 'Codice fiscale'",
-                "name" : "labelCodiceFiscale"
-            },{
-                "fieldLabel" : "Label 'Cognome'",
-                "name" : "labelCognome"
-            },{
-                "fieldLabel" : "Label 'Nome'",
-                "name" : "labelNome"
-            },{
-                "fieldLabel" : "Label 'Sesso'",
-                "name" : "labelSesso"
-            },{
-                "fieldLabel" : "Label 'Data di nascita'",
-                "name" : "labelDataDiNascita"
-            },{
-                "fieldLabel" : "Label 'Nazione di nascita'",
-                "name" : "labelNazioneDiNascita"
-            },{
-                "fieldLabel" : "Label 'Luogo di nascita'",
-                "name" : "labelLuogoDiNascita"
-            },{
-                "fieldLabel" : "Label 'Provincia'",
-                "name" : "labelProvincia"
-            },{
-                "fieldLabel" : "Label 'Cittadinanza'",
-                "name" : "labelCittadinanza"
-            },{
-                "fieldLabel" : "Pulsante 'Torna Indietro'",
-                "name" : "btnTornaIndietro"
-            },{
-                "fieldLabel" : "Pulsante 'Continua'",
-                "name" : "btnContinua"
+                "tabTitle": "Pulsanti Form",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Pulsante 'Torna Indietro'",
+                        "name" : "btnTornaIndietro"
+                    },{
+                        "fieldLabel" : "Pulsante 'Continua'",
+                        "name" : "btnContinua"
+                    }
+                ]
+            },
+            {
+                "tabTitle" : "Labels",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Title",
+                        "name" : "title"
+                    },{
+                        "fieldLabel" : "Label 'Cliente con codice fiscale'",
+                        "name" : "labelClienteConCodiceFiscale"
+                    },{
+                        "fieldLabel" : "Label 'Cliente senza codice fiscale'",
+                        "name" : "labelClienteConCodiceFiscale"
+                    },{
+                        "fieldLabel" : "Label 'Codice fiscale'",
+                        "name" : "labelCodiceFiscale"
+                    },{
+                        "fieldLabel" : "Label 'Cognome'",
+                        "name" : "labelCognome"
+                    },{
+                        "fieldLabel" : "Label 'Nome'",
+                        "name" : "labelNome"
+                    },{
+                        "fieldLabel" : "Label 'Sesso'",
+                        "name" : "labelSesso"
+                    },{
+                        "fieldLabel" : "Label 'Data di nascita'",
+                        "name" : "labelDataDiNascita"
+                    },{
+                        "fieldLabel" : "Label 'Nazione di nascita'",
+                        "name" : "labelNazioneDiNascita"
+                    },{
+                        "fieldLabel" : "Label 'Luogo di nascita'",
+                        "name" : "labelLuogoDiNascita"
+                    },{
+                        "fieldLabel" : "Label 'Provincia'",
+                        "name" : "labelProvincia"
+                    },{
+                        "fieldLabel" : "Label 'Cittadinanza'",
+                        "name" : "labelCittadinanza"
+                    }
+                ]
             }
         ]
     },
@@ -55,35 +66,68 @@
         "componentGroup": "LIS Tabaccai",
         "dialog" : [
             {
-                "fieldLabel" : "Label 'Email cliente'",
-                "name" : "labelEmailCliente"
-            },{
-                "fieldLabel" : "Label 'Numero TIM'",
-                "name" : "labelNumeroTim"
-            },{
-                "fieldLabel" : "Label 'Descrizione TIM Card'",
-                "name" : "labelDescrizioneTimCard"
-            },{
-                "fieldLabel" : "Label 'ICCID della TIM Card'",
-                "name" : "labelIccidDellaTimCard"
-            },{
-                "fieldLabel" : "Label 'Nome OLO'",
-                "name" : "labelNomeOlo"
-            },{
-                "fieldLabel" : "Label 'Numero AOM'",
-                "name" : "labelNumeroAOM"
-            },{
-                "fieldLabel" : "Label 'ICCID OLO (parte fissa)'",
-                "name" : "labelIccidOloParteFissa"
-            },{
-                "fieldLabel" : "Label 'ICCID Olo (da compilare)'",
-                "name" : "labelIccidOloDaCompilare"
-            },{
-                "fieldLabel" : "Pulsante 'Torna indietro'",
-                "name" : "btnTornaIndietro"
-            },{
-                "fieldLabel" : "Pulsante 'Continua'",
-                "name" : "btnContinua"
+              "tabTitle" :"Pulsanti Form",
+              "fields" : [
+                {
+                    "fieldLabel" : "Pulsante 'Torna indietro'",
+                    "name" : "btnTornaIndietro"
+                },{
+                    "fieldLabel" : "Pulsante 'Continua'",
+                    "name" : "btnContinua"
+                }
+              ]  
+            },
+            {
+                "tabTitle" : "Labels",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Label 'Email cliente'",
+                        "name" : "labelEmailCliente"
+                    },{
+                        "fieldLabel" : "Label 'Numero TIM'",
+                        "name" : "labelNumeroTim"
+                    },{
+                        "fieldLabel" : "Label 'Descrizione TIM Card'",
+                        "name" : "labelDescrizioneTimCard"
+                    },{
+                        "fieldLabel" : "Label 'ICCID della TIM Card'",
+                        "name" : "labelIccidDellaTimCard"
+                    },{
+                        "fieldLabel" : "Label 'Nome OLO'",
+                        "name" : "labelNomeOlo"
+                    },{
+                        "fieldLabel" : "Label 'Numero AOM'",
+                        "name" : "labelNumeroAOM"
+                    },{
+                        "fieldLabel" : "Label 'ICCID OLO (parte fissa)'",
+                        "name" : "labelIccidOloParteFissa"
+                    },{
+                        "fieldLabel" : "Label 'ICCID Olo (da compilare)'",
+                        "name" : "labelIccidOloDaCompilare"
+                    }
+                ]
+            },
+            {
+                "tabTitle" : "Modale conferma",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Titolo",
+                        "name" : "modal/title"
+                    },{
+                        "fieldLabel" : "Label 'Nome Offerta'",
+                        "name" : "modal/labelNomeOfferta"
+                    },{
+                        "fieldLabel" : "Label 'Nome Mobile Definitivo'",
+                        "name" : "modal/labelNomeMobileDefinitivo"
+                    },{
+                        "fieldLabel": "Contenuto della modale",
+                        "name" : "modal/content",
+                        "textIsRich" : true
+                    },{
+                        "fieldLabel" : "Pulsante 'Chiudi'",
+                        "name" : "modal/btnChiudi"
+                    }
+                ]
             }
         ]
     }

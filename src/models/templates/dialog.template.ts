@@ -1,24 +1,62 @@
-import { IComponent, IDialog } from "../interfaces/component.interface";
+import { IComponent } from "../interfaces/component.interface";
 
 export class DialogTemplate {
 
     private component: IComponent;
-    private fields: string;
+    private tabs: string;
 
     constructor(component: IComponent) {
-        this.fields = '';
+        this.tabs = '';
         this.component = component;
     }
 
     private generateFields() {
+        // capire se la dialog è multitab o no
         
-        this.component.dialog?.forEach(label => {
-            this.fields += `
-                    <${label.name}
+
+        this.component.dialog?.forEach((tab, index) => {
+            index = index + 1;
+
+            let tabFields = ''
+            tab.fields?.forEach(field => {
+                const tagName = field.name.split('/')[field.name.split('/').length - 1];
+                
+                if (field.textIsRich) {
+                    tabFields += `
+                                        <${tagName}
+                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                            jcr:primaryType="nt:unstructured"
+                                            name="./${field.name}"
+                                            fieldLabel="${field.fieldLabel}"
+                                            useFixedInlineToolbar="{Boolean}true" />
+                    `
+                } else {
+                    tabFields += `
+                                        <${tagName}
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="${field.fieldLabel}"
+                                            name="./${field.name}"/>`
+                }
+            })
+
+            this.tabs += `
+                    <tab${index}
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="${label.fieldLabel}"
-                        name="./${label.name}"/>`
+                        jcr:title="${tab.tabTitle}"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    ${tabFields}                                
+                                </items>
+                            </column>
+                        </items>
+                    </tab${index}>
+            `
         })
     }
 
@@ -34,16 +72,18 @@ export class DialogTemplate {
         jcr:primaryType="nt:unstructured"
         sling:resourceType="granite/ui/components/coral/foundation/container">
         <items jcr:primaryType="nt:unstructured">
-            <content
+            <tabs
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/coral/foundation/container">
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
                 <items jcr:primaryType="nt:unstructured">
-                    ${this.fields}
+                    ${this.tabs}
                 </items>
-            </content>
+            </tabs>
         </items>
     </content>
 </jcr:root>
+
         `
     }
 
