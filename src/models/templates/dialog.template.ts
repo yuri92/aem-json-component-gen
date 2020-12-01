@@ -1,4 +1,5 @@
 import { IComponent } from "../interfaces/component.interface";
+import { FieldProcessor } from "./field-processor";
 
 export class DialogTemplate {
 
@@ -19,25 +20,7 @@ export class DialogTemplate {
 
             let tabFields = ''
             tab.fields?.forEach(field => {
-                const tagName = field.name.split('/')[field.name.split('/').length - 1];
-                
-                if (field.textIsRich) {
-                    tabFields += `
-                                    <${tagName}
-                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
-                                        jcr:primaryType="nt:unstructured"
-                                        name="./${field.name}"
-                                        fieldLabel="${field.fieldLabel}"
-                                        useFixedInlineToolbar="{Boolean}true" />
-                    `
-                } else {
-                    tabFields += `
-                                    <${tagName}
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                        fieldLabel="${field.fieldLabel}"
-                                        name="./${field.name}"/>`
-                }
+                tabFields += new FieldProcessor(field).xml
             })
 
             this.tabs += `

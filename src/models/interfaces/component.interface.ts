@@ -12,5 +12,7 @@ export interface IComponent {
     fieldLabel: string;
     name: string;
     textIsRich?: boolean;
+    isCheckbox?: boolean;
+    multifield : IField[];
   }
   

@@ -1,5 +1,64 @@
 [
     {
+        "name" : "lis-form-consensi",
+        "title": "Consenso Privacy",
+        "componentGroup": "LIS Tabaccai",
+        "dialog" : [
+            {
+              "tabTitle" :"Impostazioni form",
+              "fields" : [
+                {
+                    "fieldLabel" : "Pulsante 'Torna Indietro'",
+                    "name" : "btnAnnulla"
+                },{
+                    "fieldLabel" : "Pulsante 'Continua'",
+                    "name" : "btnContinua"
+                },{
+                    "fieldLabel" : "Titolo form",
+                    "name" : "title"
+                },{
+                    "fieldLabel" : "Sottotitolo form",
+                    "name" : "subtitle"
+                },{
+                    "fieldLabel" : "Descrizione footer",
+                    "name" : "footerDescription",
+                    "textIsRich" : true
+                },{
+                    "fieldLabel" : "Label 'Accetto'",
+                    "name" : "labelAccetto"
+                },{
+                    "fieldLabel" : "Label 'Non Accetto'",
+                    "name" : "labelNonAccetto"
+                }
+              ]  
+            },{
+                "tabTitle" :"Consensi",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Consensi",
+                        "name" : "items",
+                        "multifield" : [
+                            {
+                                "fieldLabel" : "Consenso obbligatorio",
+                                "name" : "required",
+                                "isCheckbox" : true
+                            },{
+                                "fieldLabel" : "Codice",
+                                "name" : "codice"
+                            },{
+                                "fieldLabel" : "Testo",
+                                "name" : "testo"
+                            },{
+                                "fieldLabel" : "Testo Modale",
+                                "name" : "testoModale",
+                                "textIsRich" : true
+                            }
+                        ]
+                    }
+                ]  
+            }
+        ]
+    },{
         "name" : "lis-form-iccid",
         "title": "Inserimento ICCID della Tim Card",
         "componentGroup": "LIS Tabaccai",
