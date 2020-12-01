@@ -20,7 +20,7 @@
                 "tabTitle" : "Labels",
                 "fields" : [
                     {
-                        "fieldLabel" : "Title",
+                        "fieldLabel" : "Titolo form",
                         "name" : "title"
                     },{
                         "fieldLabel" : "Label 'Cliente con codice fiscale'",
@@ -81,7 +81,7 @@
                 "tabTitle" : "Labels",
                 "fields" : [
                     {
-                        "fieldLabel" : "Title",
+                        "fieldLabel" : "Titolo form",
                         "name" : "title"
                     },{
                         "fieldLabel" : "Label 'Email cliente'",
