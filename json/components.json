@@ -81,6 +81,9 @@
                 "tabTitle" : "Labels",
                 "fields" : [
                     {
+                        "fieldLabel" : "Title",
+                        "name" : "title"
+                    },{
                         "fieldLabel" : "Label 'Email cliente'",
                         "name" : "labelEmailCliente"
                     },{
@@ -126,6 +129,76 @@
                     },{
                         "fieldLabel" : "Pulsante 'Chiudi'",
                         "name" : "modal/btnChiudi"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name" : "lis-form-dati-immagine-documento",
+        "title": "Inserimento dati e immagine documento",
+        "componentGroup": "LIS Tabaccai",
+        "dialog" : [
+            {
+              "tabTitle" :"Pulsanti Form",
+              "fields" : [
+                {
+                    "fieldLabel" : "Pulsante 'Torna indietro'",
+                    "name" : "btnTornaIndietro"
+                },{
+                    "fieldLabel" : "Pulsante 'Continua'",
+                    "name" : "btnContinua"
+                }
+              ]  
+            },
+            {
+                "tabTitle" : "Labels",
+                "fields" : [
+                ]
+            }
+        ]
+    },
+    {
+        "name" : "lis-form-residenza",
+        "title": "Inserimento residenza",
+        "componentGroup": "LIS Tabaccai",
+        "dialog" : [
+            {
+              "tabTitle" :"Pulsanti Form",
+              "fields" : [
+                {
+                    "fieldLabel" : "Pulsante 'Torna indietro'",
+                    "name" : "btnTornaIndietro"
+                },{
+                    "fieldLabel" : "Pulsante 'Continua'",
+                    "name" : "btnContinua"
+                }
+              ]  
+            },
+            {
+                "tabTitle" : "Labels",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Label 'Nazione'",
+                        "name" : "labelNazione"
+                    },{
+                        "fieldLabel" : "Label 'Provincia'",
+                        "name" : "labelProvincia"
+                    },{
+                        "fieldLabel" : "Label 'Comune'",
+                        "name" : "labelComune"
+                    },{
+                        "fieldLabel" : "Label 'Particella toponomastica'",
+                        "name" : "labelParticellaToponomastica"
+                    },{
+                        "fieldLabel" : "Label 'Indirizzo'",
+                        "name" : "labelIndirizzo"
+                    },{
+                        "fieldLabel" : "Label 'N. Civico'",
+                        "name" : "labelNCivico"
+                    },{
+                        "fieldLabel" : "Label 'CAP'",
+                        "name" : "labelCap"
                     }
                 ]
             }

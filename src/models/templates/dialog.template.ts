@@ -23,20 +23,20 @@ export class DialogTemplate {
                 
                 if (field.textIsRich) {
                     tabFields += `
-                                        <${tagName}
-                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
-                                            jcr:primaryType="nt:unstructured"
-                                            name="./${field.name}"
-                                            fieldLabel="${field.fieldLabel}"
-                                            useFixedInlineToolbar="{Boolean}true" />
+                                    <${tagName}
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./${field.name}"
+                                        fieldLabel="${field.fieldLabel}"
+                                        useFixedInlineToolbar="{Boolean}true" />
                     `
                 } else {
                     tabFields += `
-                                        <${tagName}
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                            fieldLabel="${field.fieldLabel}"
-                                            name="./${field.name}"/>`
+                                    <${tagName}
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="${field.fieldLabel}"
+                                        name="./${field.name}"/>`
                 }
             })
 
