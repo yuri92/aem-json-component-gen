@@ -1,11 +1,111 @@
 [
     {
+        "name" : "lis-form-iccid",
+        "title": "Inserimento ICCID della Tim Card",
+        "componentGroup": "LIS Tabaccai",
+        "dialog" : [
+            {
+              "tabTitle" :"Impostazioni form",
+              "fields" : [
+                {
+                    "fieldLabel" : "Pulsante 'Annulla'",
+                    "name" : "btnAnnulla"
+                },{
+                    "fieldLabel" : "Pulsante 'Continua'",
+                    "name" : "btnContinua"
+                },{
+                    "fieldLabel" : "Titolo form",
+                    "name" : "title"
+                }
+              ]  
+            },{
+                "tabTitle" :"Labels",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Radio 'Attivazione nuova Linea'",
+                        "name" : "radioAttivazioneNuovaLinea"
+                    },{
+                        "fieldLabel" : "Radio 'Passa a TIM'",
+                        "name" : "radioPassaATim"
+                    },{
+                        "fieldLabel" : "Label 'Inserimento Manuale'",
+                        "name" : "labelInserimentoManuale"
+                    },{
+                        "fieldLabel" : "Label 'ICCID TIM Card'",
+                        "name" : "labelIccidTimCard"
+                    },{
+                        "fieldLabel" : "Label 'Scansione SIM'",
+                        "name" : "labelScansioneSim"
+                    },{
+                        "fieldLabel" : "Pulsante 'Leggi la SIM Card'",
+                        "name" : "btnLeggiLaSimCard"
+                    }
+                ]  
+            },{
+                "tabTitle" :"Modale cancellazione SIM",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Contenuto modale",
+                        "name" : "modals/cancellazione/content"
+                    },{
+                        "fieldLabel" : "Pulsante 'Annulla'",
+                        "name" : "modals/cancellazione/btnAnnulla"
+                    },{
+                        "fieldLabel" : "Pulsante 'Continua'",
+                        "name" : "modals/cancellazione/btnContinua"
+                    }
+                ]  
+            }
+        ]
+    },
+    {
+        "name" : "lis-header",
+        "title": "Header",
+        "componentGroup": ".hidden",
+        "dialog" : [
+            {
+              "tabTitle" :"Impostazioni",
+              "fields" : [
+                {
+                    "fieldLabel" : "Label sinistra 'Home'",
+                    "name" : "labelHome"
+                },{
+                    "fieldLabel" : "Label centrale 'Attivazione SIM'",
+                    "name" : "labelAttivazioneSim"
+                }
+              ]  
+            }
+        ]
+    },
+    {
+        "name" : "lis-login",
+        "title": "Form Login",
+        "componentGroup": "LIS Tabaccai",
+        "dialog" : [
+            {
+              "tabTitle" :"Impostazioni",
+              "fields" : [
+                {
+                    "fieldLabel" : "Label 'Codice'",
+                    "name" : "labelCodice"
+                },{
+                    "fieldLabel" : "Placeholder 'Inserisci il codice'",
+                    "name" : "labelInserisciCodice"
+                },{
+                    "fieldLabel" : "Pulsante 'Accedi'",
+                    "name" : "btnAccedi"
+                }
+              ]  
+            }
+        ]
+    },
+    {
         "name" : "lis-form-anagrafica",
         "title": "Form anagrafica",
         "componentGroup": "LIS Tabaccai",
         "dialog" : [
             {
-                "tabTitle": "Pulsanti Form",
+                "tabTitle": "Impostazioni Form",
                 "fields" : [
                     {
                         "fieldLabel" : "Pulsante 'Torna Indietro'",
@@ -13,6 +113,9 @@
                     },{
                         "fieldLabel" : "Pulsante 'Continua'",
                         "name" : "btnContinua"
+                    },{
+                        "fieldLabel" : "Titolo form",
+                        "name" : "title"
                     }
                 ]
             },
@@ -20,9 +123,6 @@
                 "tabTitle" : "Labels",
                 "fields" : [
                     {
-                        "fieldLabel" : "Titolo form",
-                        "name" : "title"
-                    },{
                         "fieldLabel" : "Label 'Cliente con codice fiscale'",
                         "name" : "labelClienteConCodiceFiscale"
                     },{
@@ -66,9 +166,12 @@
         "componentGroup": "LIS Tabaccai",
         "dialog" : [
             {
-              "tabTitle" :"Pulsanti Form",
+              "tabTitle" :"Impostazioni Form",
               "fields" : [
                 {
+                    "fieldLabel" : "Titolo form",
+                    "name" : "title"
+                },{
                     "fieldLabel" : "Pulsante 'Torna indietro'",
                     "name" : "btnTornaIndietro"
                 },{
@@ -81,9 +184,6 @@
                 "tabTitle" : "Labels",
                 "fields" : [
                     {
-                        "fieldLabel" : "Titolo form",
-                        "name" : "title"
-                    },{
                         "fieldLabel" : "Label 'Email cliente'",
                         "name" : "labelEmailCliente"
                     },{
