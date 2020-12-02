@@ -1,5 +1,114 @@
 [
     {
+        "name" : "lis-form-riepilogo-ordine",
+        "title": "Riepilogo ordine",
+        "componentGroup": "LIS Tabaccai",
+        "dialog" : [
+            {
+              "tabTitle" :"Pulsanti footer",
+              "fields" : [
+                {
+                    "fieldLabel" : "Titolo",
+                    "name" : "title"
+                },{
+                    "fieldLabel" : "Pulsante 'Stampa scontrino da firmare",
+                    "name" : "btnStampaScontrinoDaFirmare"
+                },{
+                    "fieldLabel" : "Pulsante 'Attiva SIM'",
+                    "name" : "btnAttivaSim"
+                }
+              ]  
+            },
+            {
+                "tabTitle" :"Colonna sinistra",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Label 'Email'",
+                        "name" : "labelEmail"
+                    },{
+                        "fieldLabel" : "Label 'Nome'",
+                        "name" : "labelNome"
+                    },{
+                        "fieldLabel" : "Label 'Cognome'",
+                        "name" : "labelCognome"
+                    },{
+                        "fieldLabel" : "Label 'Codice Fiscale'",
+                        "name" : "labelCodiceFiscale"
+                    },{
+                        "fieldLabel" : "Label 'Numero TIM'",
+                        "name" : "labelNumeroTim"
+                    },{
+                        "fieldLabel" : "Label 'ICCID TIM Card'",
+                        "name" : "labelIccidTimCard"
+                    },{
+                        "fieldLabel" : "Label 'Numero AOM'",
+                        "name" : "labelNumeroAom"
+                    },{
+                        "fieldLabel" : "Label 'ICCID OLO'",
+                        "name" : "labelIccidOlo"
+                    },{
+                        "fieldLabel" : "Label 'Nome Offerta'",
+                        "name" : "labelNomeOfferta"
+                    }
+                ]  
+            },
+            {
+                "tabTitle" :"Colonna destra",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Label 'Acquisizione Scontrino'",
+                        "name" : "labelAcquisizioneScontrino"
+                    },
+                    {
+                        "fieldLabel" : "Steps acquisizione scontrino",
+                        "name" : "items",
+                        "multifield" : [
+                            {
+                                "fieldLabel" : "Step",
+                                "name" : "step"
+                            }
+                        ]
+                    }
+                ]  
+            },
+            {
+                "tabTitle" :"Modale Modifica indirizzo mail",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Titolo",
+                        "name" : "modals/mail/title"
+                    },{
+                        "fieldLabel" : "Sottotitolo",
+                        "name" : "modals/mail/subtitle"
+                    },{
+                        "fieldLabel" : "Label 'Email cliente'",
+                        "name" : "modals/mail/labelEmailCliente"
+                    },{
+                        "fieldLabel" : "Pulsante 'Annulla'",
+                        "name" : "modals/mail/btnAnnulla"
+                    },{
+                        "fieldLabel" : "Pulsante 'Continua'",
+                        "name" : "modals/mail/btnContinua"
+                    }
+                ]  
+            },
+            {
+                "tabTitle" :"Modale Acquisizione scontrino",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Titolo",
+                        "name" : "modals/scontrino/title"
+                    },{
+                        "fieldLabel" : "Pulsante 'Annulla'",
+                        "name" : "modals/scontrino/btnAnnulla"
+                    },{
+                        "fieldLabel" : "Pulsante 'Continua'",
+                        "name" : "modals/scontrino/btnContinua"
+                    }
+                ]  
+            }
+        ]
+    },{
         "name" : "lis-form-consensi",
         "title": "Consenso Privacy",
         "componentGroup": "LIS Tabaccai",
