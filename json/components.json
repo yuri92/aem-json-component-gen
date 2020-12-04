@@ -168,8 +168,8 @@
             }
         ]
     },{
-        "name" : "lis-form-iccid",
-        "title": "Inserimento ICCID della Tim Card",
+        "name" : "lis-form-scelta-tipo-processo",
+        "title": "Inserimento ICCID della Tim Card (Scelta tipo processo)",
         "componentGroup": "LIS Tabaccai",
         "dialog" : [
             {
@@ -267,6 +267,134 @@
             }
         ]
     },
+    {
+        "name" : "lis-form-dati-mnp",
+        "title": "Form Dati MNP",
+        "componentGroup": "LIS Tabaccai",
+        "dialog" : [
+            {
+            "tabTitle" :"Impostazioni form",
+            "fields" : [
+                    {
+                        "fieldLabel" : "Pulsante 'Annulla'",
+                        "name" : "btnAnnulla"
+                    },{
+                        "fieldLabel" : "Pulsante 'Continua'",
+                        "name" : "btnContinua"
+                    },{
+                        "fieldLabel" : "Titolo form",
+                        "name" : "title"
+                    }
+                ]  
+            },{
+                "tabTitle" :"Colonna sinistra",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Titolo",
+                        "name" : "sx/title"
+                    },{
+                        "fieldLabel" : "Label 'Codice Fiscale/Partita IVA'",
+                        "name" : "sx/labelCodiceFiscalePartitaIva"
+                    },{
+                        "fieldLabel" : "Pulsante 'Accedi'",
+                        "name" : "btnAccedi"
+                    }
+                ]  
+            },{
+                "tabTitle" :"Colonna destra",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Titolo",
+                        "name" : "dx/title"
+                    },{
+                        "fieldLabel" : "Label radio 'Prepagata'",
+                        "name" : "dx/labelRadioPrepagata"
+                    },{
+                        "fieldLabel" : "Label radio 'Abbonato'",
+                        "name" : "dx/labelRadioAbbonato"
+                    },{
+                        "fieldLabel" : "Label 'Data di nascita'",
+                        "name" : "dx/labelDataDiNascita"
+                    }
+                ]  
+            }
+        ]
+    },
+
+    {
+        "name" : "lis-documento",
+        "title": "Form Dati Documento",
+        "componentGroup": "LIS Tabaccai",
+        "dialog" : [
+            {
+            "tabTitle" :"Impostazioni form",
+            "fields" : [
+                    {
+                        "fieldLabel" : "Pulsante 'Torna indietro'",
+                        "name" : "btnTornaIndietro"
+                    },{
+                        "fieldLabel" : "Pulsante 'Continua'",
+                        "name" : "btnContinua"
+                    },{
+                        "fieldLabel" : "Titolo form",
+                        "name" : "title"
+                    }
+                ]  
+            },{
+                "tabTitle" :"Label form",
+                "fields" : [
+                    {
+                        "fieldLabel" : "Label 'Tipologia documento'",
+                        "name" : "labelTipologiaDocumento"
+                    },{
+                        "fieldLabel" : "Label 'Numero'",
+                        "name" : "labelNumero"
+                    },{
+                        "fieldLabel" : "Label 'Data rilascio'",
+                        "name" : "labelDataRilascio"
+                    },{
+                        "fieldLabel" : "Label 'Data di scadenza'",
+                        "name" : "labelDataDiScadenza"
+                    },{
+                        "fieldLabel" : "Label 'Acquisizione immagine'",
+                        "name" : "labelAcquisizioneImmagine"
+                    },{
+                        "fieldLabel" : "Label 'Fronte'",
+                        "name" : "labelFronte"
+                    },{
+                        "fieldLabel" : "Label 'Retro'",
+                        "name" : "labelRetro"
+                    }
+                ]  
+            },{
+                "tabTitle" :"Modale cancellazione documento",
+                "fields" : [    
+                    {
+                        "fieldLabel" : "Contenuto",
+                        "name" : "modals/cancella/text"
+                    },{
+                        "fieldLabel" : "Pulsante 'Continua'",
+                        "name" : "modals/cancella/btnContinua"
+                    },{
+                        "fieldLabel" : "Pulsante 'Annulla'",
+                        "name" : "modals/cancella/btnAnnulla"
+                    }
+                ]  
+            },{
+                "tabTitle" :"Modale anteprima documento",
+                "fields" : [    
+                    {
+                        "fieldLabel" : "Titolo",
+                        "name" : "modals/cancella/title"
+                    },{
+                        "fieldLabel" : "Pulsante 'Chiudi'",
+                        "name" : "modals/anteprima/btnChiudi"
+                    }
+                ]  
+            }
+        ]
+    },
+
     {
         "name" : "lis-form-anagrafica",
         "title": "Form anagrafica",

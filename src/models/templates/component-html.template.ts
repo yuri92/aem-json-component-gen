@@ -10,9 +10,6 @@ export class ComponentHtmlTemplate {
 
     get xml() {
         let xml = '';
-        // this.component.dialog?.forEach(label => {
-        //     xml += '${properties.' + label. + '}\n'
-        // })
         return xml;
     }
 
