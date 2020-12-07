@@ -35,10 +35,13 @@ export class ComponentHtmlTemplate {
                 })
             })
         } else {
-            console.log(this.component.name, 'Componente complesso')
+            //console.log(this.component.name, 'Componente complesso')
             // componente complesso, devo creare un js di appoggio
             const componentJs = path.join(__dirname, '..', '..', '..', 'json', 'generated', this.component.name, 'component.js');
             fs.writeFileSync(componentJs, this.getComponentJs());
+
+            // il .html del file deve includere il component.js
+            return this.getHtmlComplexContent();
 
         }
 
@@ -51,6 +54,9 @@ export class ComponentHtmlTemplate {
         this.component.dialog?.forEach(tab => {
             // console.log('\t' + tab.tabTitle)
             tab.fields?.forEach(field => {
+                if (field.multifield) {
+                    console.log('Multifield, approccio diverso')
+                }
 
                 if (field.name.includes('/')) {                    
                     // console.log('\t\t' + field.name)   
@@ -69,59 +75,50 @@ export class ComponentHtmlTemplate {
         return `    
 "use strict";
 use(function () {
-    var nProperties = \t${finalJsonString};    
+    var nProperties = ${finalJsonString};    
     return nProperties;
 });`        
     }
 
-//     "use strict";
-// use(function () {
-//     var nProperties = {
-//         homepage : resource.getChild("homepage"),
-//         barraSuperiore : resource.getChild("barraSuperiore"),
-//         barraSuperioreSocial: resource.getChild("barraSuperiore/social/items").listChildren(),
-//         barraInferioreSocial :resource.getChild("barraInferiore/social/items"),
-//         logo : {
-//             properties: resource.getChild("logo"),
-//             internal : resource.getChild("logo/internal"),
-//             internalDx : resource.getChild("logo/internalDx"),
-//             homepage : resource.getChild("logo/homepage"),
-//             homepageDx : resource.getChild("logo/homepageDx")
-            
-//         },
-//         socialWall : resource.getChild("socialWall"),
-//         isPathBoxInferioreSxInternal : function(){
-//         	return resource.getResourceResolver().getResource( properties.pathBoxInferioreSx ) != null;
-//         },
-//         isPathBoxInferioreDxInternal : function(){
-//         	return resource.getResourceResolver().getResource( properties.pathBoxInferioreDx  ) != null;
-//         }
-//     };    
-    
-    
-//     return nProperties;
-// });
+    private getHtmlComplexContent(): string {
+        let labels = '';
+        this.component.dialog?.forEach(tab => {
+            tab.fields?.forEach(field => {
+                if (field.name.includes('/')) {
+                    labels += `\${nProperties.${field.name.replace(/\//ig, '.')}} - ${field.fieldLabel}\n`
 
-private unflatten(data: any): any {
-    if (Object(data) !== data || Array.isArray(data)) {
-      return data;
+                } else {
+                    labels += `\${properties.${field.name}}\n`
+                }
+            })
+        })
+        return `
+<sly data-sly-use.nProperties="component.js"/>
+
+${labels}
+        `
     }
-    const regex = /\.?([^.\[\]]+)|\[(\d+)\]/g;
-    const resultholder: any = {};
-    // tslint:disable-next-line:forin
-    for (const p in data) {
-      let cur: any = resultholder;
-      let prop = '';
-      let m;
-      // tslint:disable-next-line:no-conditional-assignment
-      while (m = regex.exec(p)) {
-        cur = cur[prop] || (cur[prop] = (m[2] ? [] : {}));
-        prop = m[2] || m[1];
-      }
-      cur[prop] = data[p];
+
+    private unflatten(data: any): any {
+        if (Object(data) !== data || Array.isArray(data)) {
+        return data;
+        }
+        const regex = /\.?([^.\[\]]+)|\[(\d+)\]/g;
+        const resultholder: any = {};
+        // tslint:disable-next-line:forin
+        for (const p in data) {
+        let cur: any = resultholder;
+        let prop = '';
+        let m;
+        // tslint:disable-next-line:no-conditional-assignment
+        while (m = regex.exec(p)) {
+            cur = cur[prop] || (cur[prop] = (m[2] ? [] : {}));
+            prop = m[2] || m[1];
+        }
+        cur[prop] = data[p];
+        }
+        return resultholder[''] || resultholder;
     }
-    return resultholder[''] || resultholder;
-  }
 
 
 }
