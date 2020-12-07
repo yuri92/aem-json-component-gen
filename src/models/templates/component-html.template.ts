@@ -1,4 +1,6 @@
 import { IComponent } from "../interfaces/component.interface";
+import * as fs from 'fs';
+import * as path from 'path';
 
 export class ComponentHtmlTemplate {
 
@@ -32,9 +34,39 @@ export class ComponentHtmlTemplate {
                     xml += `\${properties.${field.name}} - ${field.fieldLabel}\n`
                 })
             })
+        } else {
+            // componente complesso, devo creare un js di appoggio
+            const componentJs = path.join(__dirname, '..', '..', '..', 'json', 'generated', this.component.name, 'component.js');
+            fs.writeFileSync(componentJs, this.getComponentJs());
+
         }
 
         return xml;
+    }
+
+    private getComponentJs(): string {
+        let obj: any = {};
+        console.log(this.component.title)
+        this.component.dialog?.forEach(tab => {
+            console.log('\t' + tab.tabTitle)
+            tab.fields?.forEach(field => {
+
+                if (field.name.includes('/')) {                    
+                    console.log('\t\t' + field.name)   
+                    let flattenField = field.name.replace(/\//ig, '.');
+                    flattenField = flattenField.substring(0, flattenField.lastIndexOf('.'))
+                    
+                    obj[flattenField] = `resource.getChild("${field.name}")`;
+                    obj = this.unflatten(obj)           
+                }
+            })
+        })
+        return `    
+"use strict";
+use(function () {
+    var nProperties = ${JSON.stringify(obj, undefined, 4)};    
+    return nProperties;
+});`        
     }
 
 //     "use strict";
@@ -64,6 +96,27 @@ export class ComponentHtmlTemplate {
     
 //     return nProperties;
 // });
+
+private unflatten(data: any): any {
+    if (Object(data) !== data || Array.isArray(data)) {
+      return data;
+    }
+    const regex = /\.?([^.\[\]]+)|\[(\d+)\]/g;
+    const resultholder: any = {};
+    // tslint:disable-next-line:forin
+    for (const p in data) {
+      let cur: any = resultholder;
+      let prop = '';
+      let m;
+      // tslint:disable-next-line:no-conditional-assignment
+      while (m = regex.exec(p)) {
+        cur = cur[prop] || (cur[prop] = (m[2] ? [] : {}));
+        prop = m[2] || m[1];
+      }
+      cur[prop] = data[p];
+    }
+    return resultholder[''] || resultholder;
+  }
 
 
 }
