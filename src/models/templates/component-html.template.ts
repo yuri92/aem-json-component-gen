@@ -35,6 +35,7 @@ export class ComponentHtmlTemplate {
                 })
             })
         } else {
+            console.log(this.component.name, 'Componente complesso')
             // componente complesso, devo creare un js di appoggio
             const componentJs = path.join(__dirname, '..', '..', '..', 'json', 'generated', this.component.name, 'component.js');
             fs.writeFileSync(componentJs, this.getComponentJs());
@@ -46,25 +47,29 @@ export class ComponentHtmlTemplate {
 
     private getComponentJs(): string {
         let obj: any = {};
-        console.log(this.component.title)
+        // console.log(this.component.title)
         this.component.dialog?.forEach(tab => {
-            console.log('\t' + tab.tabTitle)
+            // console.log('\t' + tab.tabTitle)
             tab.fields?.forEach(field => {
 
                 if (field.name.includes('/')) {                    
-                    console.log('\t\t' + field.name)   
+                    // console.log('\t\t' + field.name)   
                     let flattenField = field.name.replace(/\//ig, '.');
                     flattenField = flattenField.substring(0, flattenField.lastIndexOf('.'))
                     
-                    obj[flattenField] = `resource.getChild("${field.name}")`;
+                    obj[flattenField] = `resource.getChild('${field.name.substring(0, field.name.lastIndexOf('/'))}')`;
                     obj = this.unflatten(obj)           
                 }
             })
         })
+
+        let finalJsonString = JSON.stringify(obj, undefined, 4);
+        finalJsonString = finalJsonString.replace(/"resource./ig, 'resource.')
+        finalJsonString = finalJsonString.replace(/'\)"/ig, "')")
         return `    
 "use strict";
 use(function () {
-    var nProperties = ${JSON.stringify(obj, undefined, 4)};    
+    var nProperties = \t${finalJsonString};    
     return nProperties;
 });`        
     }
