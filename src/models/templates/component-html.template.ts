@@ -26,12 +26,12 @@ export class ComponentHtmlTemplate {
     }
 
     get xml() {
-        let xml = '';
+        let xml = '<!--\n';
 
         if (this.complexFields.size === 0) {
             this.component.dialog?.forEach(tab => {
                 tab.fields?.forEach(field => {
-                    xml += `\${properties.${field.name}} - ${field.fieldLabel}\n`
+                    xml += `${field.fieldLabel} - \${properties.${field.name}}\n`
                 })
             })
         } else {
@@ -44,6 +44,8 @@ export class ComponentHtmlTemplate {
             return this.getHtmlComplexContent();
 
         }
+
+        xml += '-->'
 
         return xml;
     }
@@ -85,17 +87,18 @@ use(function () {
         this.component.dialog?.forEach(tab => {
             tab.fields?.forEach(field => {
                 if (field.name.includes('/')) {
-                    labels += `\${nProperties.${field.name.replace(/\//ig, '.')}} - ${field.fieldLabel}\n`
+                    labels += `${field.fieldLabel} - \${nProperties.${field.name.replace(/\//ig, '.')}}\n`
 
                 } else {
-                    labels += `\${properties.${field.name}}\n`
+                    labels += `${field.fieldLabel} - \${properties.${field.name}}\n`
                 }
             })
         })
         return `
 <sly data-sly-use.nProperties="component.js"/>
-
+<!--
 ${labels}
+-->
         `
     }
 
