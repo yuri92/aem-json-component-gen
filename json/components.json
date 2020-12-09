@@ -600,26 +600,6 @@
     ]
 },
 {
-    "name": "lis-form-dati-immagine-documento",
-    "title": "Inserimento dati e immagine documento",
-    "componentGroup": "LIS Tabaccai",
-    "dialog": [{
-            "tabTitle": "Pulsanti Form",
-            "fields": [{
-                "fieldLabel": "Pulsante 'Torna indietro'",
-                "name": "btnTornaIndietro"
-            }, {
-                "fieldLabel": "Pulsante 'Continua'",
-                "name": "btnContinua"
-            }]
-        },
-        {
-            "tabTitle": "Labels",
-            "fields": []
-        }
-    ]
-},
-{
     "name": "lis-form-residenza",
     "title": "Inserimento residenza",
     "componentGroup": "LIS Tabaccai",
