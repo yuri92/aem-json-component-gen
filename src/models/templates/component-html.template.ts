@@ -26,7 +26,7 @@ export class ComponentHtmlTemplate {
     }
 
     get xml() {
-        let xml = '<!--\n';
+        let xml = '';
 
         if (this.complexFields.size === 0) {
             this.component.dialog?.forEach(tab => {
@@ -45,7 +45,6 @@ export class ComponentHtmlTemplate {
 
         }
 
-        xml += '-->'
 
         return xml;
     }
@@ -74,8 +73,7 @@ export class ComponentHtmlTemplate {
         let finalJsonString = JSON.stringify(obj, undefined, 4);
         finalJsonString = finalJsonString.replace(/"resource./ig, 'resource.')
         finalJsonString = finalJsonString.replace(/'\)"/ig, "')")
-        return `    
-"use strict";
+        return `"use strict";
 use(function () {
     var nProperties = ${finalJsonString};    
     return nProperties;
@@ -96,9 +94,7 @@ use(function () {
         })
         return `
 <sly data-sly-use.nProperties="component.js"/>
-<!--
 ${labels}
--->
         `
     }
 
