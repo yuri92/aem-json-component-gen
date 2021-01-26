@@ -1,0 +1,643 @@
+[{
+    "name": "lis-form-operazione-conclusa",
+    "title": "Operazione conclusa",
+    "componentGroup": "LIS Tabaccai",
+    "dialog": [{
+        "tabTitle": "Pulsanti footer",
+        "fields": [{
+            "fieldLabel": "Titolo",
+            "name": "title"
+        }, {
+            "fieldLabel": "Sottotitolo",
+            "name": "subtitle",
+            "textIsRich" : true
+        }, {
+            "fieldLabel": "Pulsante 'Fine'",
+            "name": "btnFine"
+        }]
+    },{
+        "tabTitle": "Box 'Riepilogo Ordine'",
+        "fields": [{
+            "fieldLabel": "Titolo",
+            "name": "riepilogoOrdine/title"
+        },{
+            "fieldLabel": "Label 'Email'",
+            "name": "riepilogoOrdine/labelEmail"
+        },{
+            "fieldLabel": "Label 'Nome'",
+            "name": "riepilogoOrdine/labelNome"
+        },{
+            "fieldLabel": "Label 'Cognome'",
+            "name": "riepilogoOrdine/labelCognome"
+        },{
+            "fieldLabel": "Label 'Codice Fiscale'",
+            "name": "riepilogoOrdine/labelCodiceFiscale"
+        },{
+            "fieldLabel": "Label 'Data nascita'",
+            "name": "riepilogoOrdine/labelDataNascita"
+        },{
+            "fieldLabel": "Label 'Sesso'",
+            "name": "riepilogoOrdine/labelSesso"
+        },{
+            "fieldLabel": "Label 'Nazione di Nascita'",
+            "name": "riepilogoOrdine/labelNazioneDiNascita"
+        },{
+            "fieldLabel": "Label 'Luogo di Nascita'",
+            "name": "riepilogoOrdine/labelLuogoDiNascita"
+        },{
+            "fieldLabel": "Label 'Provincia'",
+            "name": "riepilogoOrdine/labelProvincia"
+        },{
+            "fieldLabel": "Label 'Cittadinanza'",
+            "name": "riepilogoOrdine/labelCittadinanza"
+        }]
+    },{
+        "tabTitle": "Box 'Residenza'",
+        "fields": [{
+            "fieldLabel": "Titolo",
+            "name": "residenza/title"
+        },{
+            "fieldLabel": "Label 'Nazione'",
+            "name": "residenza/labelNazione"
+        },{
+            "fieldLabel": "Label 'Comune'",
+            "name": "residenza/labelComune"
+        },{
+            "fieldLabel": "Label 'Provincia'",
+            "name": "residenza/labelProvincia"
+        },{
+            "fieldLabel": "Label 'Indirizzo'",
+            "name": "residenza/labelIndirizzo"
+        },{
+            "fieldLabel": "Label 'Num'",
+            "name": "residenza/labelNum"
+        },{
+            "fieldLabel": "Label 'Cap'",
+            "name": "residenza/labelCap"
+        },{
+            "fieldLabel": "Label 'Particella Toponomastica'",
+            "name": "residenza/labelPartToponomastica"
+        }]
+    },{
+        "tabTitle": "Box 'Documento'",
+        "fields": [{
+            "fieldLabel": "Titolo",
+            "name": "documento/title"
+        },{
+            "fieldLabel": "Label 'Tipologia documento'",
+            "name": "documento/labelTipDocumento"
+        },{
+            "fieldLabel": "Label 'Numero'",
+            "name": "documento/labelNumero"
+        },{
+            "fieldLabel": "Label 'Data rilascio'",
+            "name": "documento/labelDataRilascio"
+        },{
+            "fieldLabel": "Label 'Data scadenza'",
+            "name": "documento/labelDataScadenza"
+        }]
+    },{
+        "tabTitle": "Box 'Offerta'",
+        "fields": [{
+            "fieldLabel": "Label 'Nome Offerta'",
+            "name": "offerta/labelNomeOfferta"
+        },{
+            "fieldLabel": "Label 'Numero TIM'",
+            "name": "offerta/labelNumeroTim"
+        },{
+            "fieldLabel": "Label 'ICCID TIM Card'",
+            "name": "offerta/labelIccidTimCard"
+        },{
+            "fieldLabel": "Label 'Numero AOM'",
+            "name": "offerta/labelNumeroAOM"
+        },{
+            "fieldLabel": "Label 'ICCID OLO'",
+            "name": "offerta/labelIccidOlo"
+        },{
+            "fieldLabel": "Label 'Descrizione'",
+            "name": "offerta/labelDescrizione"
+        }]
+    }]
+}, {
+    "name": "lis-form-riepilogo-ordine",
+    "title": "Riepilogo ordine",
+    "componentGroup": "LIS Tabaccai",
+    "dialog": [{
+            "tabTitle": "Pulsanti footer",
+            "fields": [{
+                "fieldLabel": "Titolo",
+                "name": "title"
+            }, {
+                "fieldLabel": "Pulsante 'Stampa scontrino da firmare",
+                "name": "btnStampaScontrinoDaFirmare"
+            }, {
+                "fieldLabel": "Pulsante 'Attiva SIM'",
+                "name": "btnAttivaSim"
+            }, {
+                "fieldLabel": "Pulsante 'Torna indietro'",
+                "name": "btnTornaIndietro"
+            }]
+        },
+        {
+            "tabTitle": "Colonna sinistra",
+            "fields": [{
+                "fieldLabel": "Label 'Email'",
+                "name": "labelEmail"
+            }, {
+                "fieldLabel": "Label 'Nome'",
+                "name": "labelNome"
+            }, {
+                "fieldLabel": "Label 'Cognome'",
+                "name": "labelCognome"
+            }, {
+                "fieldLabel": "Label 'Codice Fiscale'",
+                "name": "labelCodiceFiscale"
+            }, {
+                "fieldLabel": "Label 'Numero TIM'",
+                "name": "labelNumeroTim"
+            }, {
+                "fieldLabel": "Label 'ICCID TIM Card'",
+                "name": "labelIccidTimCard"
+            }, {
+                "fieldLabel": "Label 'Numero AOM'",
+                "name": "labelNumeroAom"
+            }, {
+                "fieldLabel": "Label 'ICCID OLO'",
+                "name": "labelIccidOlo"
+            }, {
+                "fieldLabel": "Label 'Nome Offerta'",
+                "name": "labelNomeOfferta"
+            }]
+        },
+        {
+            "tabTitle": "Colonna destra",
+            "fields": [{
+                    "fieldLabel": "Label 'Acquisizione Scontrino'",
+                    "name": "labelAcquisizioneScontrino"
+                },
+                {
+                    "fieldLabel": "Steps acquisizione scontrino",
+                    "name": "items",
+                    "multifield": [{
+                        "fieldLabel": "Step",
+                        "name": "step"
+                    }]
+                }
+            ]
+        },
+        {
+            "tabTitle": "Modale Modifica indirizzo mail",
+            "fields": [{
+                "fieldLabel": "Titolo",
+                "name": "modals/mail/title"
+            }, {
+                "fieldLabel": "Sottotitolo",
+                "name": "modals/mail/subtitle"
+            }, {
+                "fieldLabel": "Label 'Email cliente'",
+                "name": "modals/mail/labelEmailCliente"
+            }, {
+                "fieldLabel": "Pulsante 'Annulla'",
+                "name": "modals/mail/btnAnnulla"
+            }, {
+                "fieldLabel": "Pulsante 'Continua'",
+                "name": "modals/mail/btnContinua"
+            }]
+        },
+        {
+            "tabTitle": "Modale Acquisizione scontrino",
+            "fields": [{
+                "fieldLabel": "Titolo",
+                "name": "modals/scontrino/acquisisci/title"
+            }, {
+                "fieldLabel": "Pulsante 'Annulla'",
+                "name": "modals/scontrino/acquisisci/btnAnnulla"
+            }, {
+                "fieldLabel": "Pulsante 'Continua'",
+                "name": "modals/scontrino/acquisisci/btnContinua"
+            }]
+        },
+        {
+            "tabTitle": "Modale cancella scontrino",
+            "fields": [{
+                "fieldLabel": "Titolo",
+                "name": "modals/scontrino/cancella/title"
+            }, {
+                "fieldLabel": "Pulsante 'Annulla'",
+                "name": "modals/scontrino/cancella/btnAnnulla"
+            }, {
+                "fieldLabel": "Pulsante 'Continua'",
+                "name": "modals/scontrino/cancella/btnContinua"
+            }]
+        }
+    ]
+}, {
+    "name": "lis-form-consensi",
+    "title": "Consenso Privacy",
+    "componentGroup": "LIS Tabaccai",
+    "dialog": [{
+        "tabTitle": "Impostazioni form",
+        "fields": [{
+            "fieldLabel": "Pulsante 'Torna Indietro'",
+            "name": "btnAnnulla"
+        }, {
+            "fieldLabel": "Pulsante 'Continua'",
+            "name": "btnContinua"
+        }, {
+            "fieldLabel": "Titolo form",
+            "name": "title"
+        }, {
+            "fieldLabel": "Sottotitolo form",
+            "name": "subtitle"
+        }, {
+            "fieldLabel": "Descrizione footer",
+            "name": "footerDescription",
+            "textIsRich": true
+        }, {
+            "fieldLabel": "Label 'Accetto'",
+            "name": "labelAccetto"
+        }, {
+            "fieldLabel": "Label 'Non Accetto'",
+            "name": "labelNonAccetto"
+        }]
+    }, {
+        "tabTitle": "Consensi",
+        "fields": [{
+            "fieldLabel": "Consensi",
+            "name": "items",
+            "multifield": [{
+                "fieldLabel": "Consenso obbligatorio",
+                "name": "required",
+                "isCheckbox": true
+            }, {
+                "fieldLabel": "Codice",
+                "name": "codice"
+            }, {
+                "fieldLabel": "Testo",
+                "name": "testo"
+            }, {
+                "fieldLabel": "Testo Modale",
+                "name": "testoModale",
+                "textIsRich": true
+            }]
+        }]
+    }]
+}, {
+    "name": "lis-form-scelta-tipo-processo",
+    "title": "Inserimento ICCID della Tim Card (Scelta tipo processo)",
+    "componentGroup": "LIS Tabaccai",
+    "dialog": [{
+        "tabTitle": "Impostazioni form",
+        "fields": [{
+            "fieldLabel": "Pulsante 'Annulla'",
+            "name": "btnAnnulla"
+        }, {
+            "fieldLabel": "Pulsante 'Continua'",
+            "name": "btnContinua"
+        }, {
+            "fieldLabel": "Titolo form",
+            "name": "title"
+        }]
+    }, {
+        "tabTitle": "Labels",
+        "fields": [{
+            "fieldLabel": "Radio 'Attivazione nuova Linea'",
+            "name": "radioAttivazioneNuovaLinea"
+        }, {
+            "fieldLabel": "Radio 'Passa a TIM'",
+            "name": "radioPassaATim"
+        }, {
+            "fieldLabel": "Label 'Inserimento Manuale'",
+            "name": "labelInserimentoManuale"
+        }, {
+            "fieldLabel": "Label 'ICCID TIM Card'",
+            "name": "labelIccidTimCard"
+        }, {
+            "fieldLabel": "Label 'Scansione SIM'",
+            "name": "labelScansioneSim"
+        }, {
+            "fieldLabel": "Pulsante 'Leggi la SIM Card'",
+            "name": "btnLeggiLaSimCard"
+        }]
+    }, {
+        "tabTitle": "Modale cancellazione SIM",
+        "fields": [{
+            "fieldLabel": "Contenuto modale",
+            "name": "modals/cancellazione/content"
+        }, {
+            "fieldLabel": "Pulsante 'Annulla'",
+            "name": "modals/cancellazione/btnAnnulla"
+        }, {
+            "fieldLabel": "Pulsante 'Continua'",
+            "name": "modals/cancellazione/btnContinua"
+        }]
+    }]
+},
+{
+    "name": "lis-header",
+    "title": "Header",
+    "componentGroup": ".hidden",
+    "dialog": [{
+        "tabTitle": "Impostazioni",
+        "fields": [{
+            "fieldLabel": "Label sinistra 'Home'",
+            "name": "labelHome"
+        }, {
+            "fieldLabel": "Label centrale 'Attivazione SIM'",
+            "name": "labelAttivazioneSim"
+        }]
+    }]
+},
+{
+    "name": "lis-login",
+    "title": "Form Login",
+    "componentGroup": "LIS Tabaccai",
+    "dialog": [{
+        "tabTitle": "Impostazioni",
+        "fields": [{
+            "fieldLabel": "Label 'Codice'",
+            "name": "labelCodice"
+        }, {
+            "fieldLabel": "Placeholder 'Inserisci il codice'",
+            "name": "labelInserisciCodice"
+        }, {
+            "fieldLabel": "Pulsante 'Accedi'",
+            "name": "btnAccedi"
+        }]
+    }]
+},
+{
+    "name": "lis-form-dati-mnp",
+    "title": "Form Dati MNP",
+    "componentGroup": "LIS Tabaccai",
+    "dialog": [{
+        "tabTitle": "Impostazioni form",
+        "fields": [{
+            "fieldLabel": "Pulsante 'Annulla'",
+            "name": "btnAnnulla"
+        }, {
+            "fieldLabel": "Pulsante 'Continua'",
+            "name": "btnContinua"
+        }, {
+            "fieldLabel": "Titolo form",
+            "name": "title"
+        }]
+    }, {
+        "tabTitle": "Colonna sinistra",
+        "fields": [{
+            "fieldLabel": "Titolo",
+            "name": "sx/title"
+        }, {
+            "fieldLabel": "Label 'Codice Fiscale/Partita IVA'",
+            "name": "sx/labelCodiceFiscalePartitaIva"
+        }, {
+            "fieldLabel": "Pulsante 'Accedi'",
+            "name": "btnAccedi"
+        }]
+    }, {
+        "tabTitle": "Colonna destra",
+        "fields": [{
+            "fieldLabel": "Titolo",
+            "name": "dx/title"
+        }, {
+            "fieldLabel": "Label radio 'Prepagata'",
+            "name": "dx/labelRadioPrepagata"
+        }, {
+            "fieldLabel": "Label radio 'Abbonato'",
+            "name": "dx/labelRadioAbbonato"
+        }, {
+            "fieldLabel": "Label 'Data di nascita'",
+            "name": "dx/labelDataDiNascita"
+        }]
+    }]
+},
+
+{
+    "name": "lis-documento",
+    "title": "Form Dati Documento",
+    "componentGroup": "LIS Tabaccai",
+    "dialog": [{
+        "tabTitle": "Impostazioni form",
+        "fields": [{
+            "fieldLabel": "Pulsante 'Torna indietro'",
+            "name": "btnTornaIndietro"
+        }, {
+            "fieldLabel": "Pulsante 'Continua'",
+            "name": "btnContinua"
+        }, {
+            "fieldLabel": "Titolo form",
+            "name": "title"
+        }]
+    }, {
+        "tabTitle": "Label form",
+        "fields": [{
+            "fieldLabel": "Label 'Tipologia documento'",
+            "name": "labelTipologiaDocumento"
+        }, {
+            "fieldLabel": "Label 'Numero'",
+            "name": "labelNumero"
+        }, {
+            "fieldLabel": "Label 'Data rilascio'",
+            "name": "labelDataRilascio"
+        }, {
+            "fieldLabel": "Label 'Data di scadenza'",
+            "name": "labelDataDiScadenza"
+        }, {
+            "fieldLabel": "Label 'Acquisizione immagine'",
+            "name": "labelAcquisizioneImmagine"
+        }, {
+            "fieldLabel": "Label 'Fronte'",
+            "name": "labelFronte"
+        }, {
+            "fieldLabel": "Label 'Retro'",
+            "name": "labelRetro"
+        }]
+    }, {
+        "tabTitle": "Modale cancellazione documento",
+        "fields": [{
+            "fieldLabel": "Contenuto",
+            "name": "modals/cancella/text"
+        }, {
+            "fieldLabel": "Pulsante 'Continua'",
+            "name": "modals/cancella/btnContinua"
+        }, {
+            "fieldLabel": "Pulsante 'Annulla'",
+            "name": "modals/cancella/btnAnnulla"
+        }]
+    }, {
+        "tabTitle": "Modale anteprima documento",
+        "fields": [{
+            "fieldLabel": "Titolo",
+            "name": "modals/anteprima/title"
+        }, {
+            "fieldLabel": "Pulsante 'Chiudi'",
+            "name": "modals/anteprima/btnChiudi"
+        }]
+    }]
+},
+
+{
+    "name": "lis-form-anagrafica",
+    "title": "Form anagrafica",
+    "componentGroup": "LIS Tabaccai",
+    "dialog": [{
+            "tabTitle": "Impostazioni Form",
+            "fields": [{
+                "fieldLabel": "Pulsante 'Torna Indietro'",
+                "name": "btnTornaIndietro"
+            }, {
+                "fieldLabel": "Pulsante 'Continua'",
+                "name": "btnContinua"
+            }, {
+                "fieldLabel": "Titolo form",
+                "name": "title"
+            }]
+        },
+        {
+            "tabTitle": "Labels",
+            "fields": [{
+                "fieldLabel": "Label 'Cliente con codice fiscale'",
+                "name": "labelClienteConCodiceFiscale"
+            }, {
+                "fieldLabel": "Label 'Cliente senza codice fiscale'",
+                "name": "labelClienteConCodiceFiscale"
+            }, {
+                "fieldLabel": "Label 'Codice fiscale'",
+                "name": "labelCodiceFiscale"
+            }, {
+                "fieldLabel": "Label 'Cognome'",
+                "name": "labelCognome"
+            }, {
+                "fieldLabel": "Label 'Nome'",
+                "name": "labelNome"
+            }, {
+                "fieldLabel": "Label 'Sesso'",
+                "name": "labelSesso"
+            }, {
+                "fieldLabel": "Label 'Data di nascita'",
+                "name": "labelDataDiNascita"
+            }, {
+                "fieldLabel": "Label 'Nazione di nascita'",
+                "name": "labelNazioneDiNascita"
+            }, {
+                "fieldLabel": "Label 'Luogo di nascita'",
+                "name": "labelLuogoDiNascita"
+            }, {
+                "fieldLabel": "Label 'Provincia'",
+                "name": "labelProvincia"
+            }, {
+                "fieldLabel": "Label 'Cittadinanza'",
+                "name": "labelCittadinanza"
+            }]
+        }
+    ]
+},
+{
+    "name": "lis-form-email-tim-card",
+    "title": "Form Email e TIM Card",
+    "componentGroup": "LIS Tabaccai",
+    "dialog": [{
+            "tabTitle": "Impostazioni Form",
+            "fields": [{
+                "fieldLabel": "Titolo form",
+                "name": "title"
+            }, {
+                "fieldLabel": "Pulsante 'Torna indietro'",
+                "name": "btnTornaIndietro"
+            }, {
+                "fieldLabel": "Pulsante 'Continua'",
+                "name": "btnContinua"
+            }]
+        },
+        {
+            "tabTitle": "Labels",
+            "fields": [{
+                "fieldLabel": "Label 'Email cliente'",
+                "name": "labelEmailCliente"
+            }, {
+                "fieldLabel": "Label 'Numero TIM'",
+                "name": "labelNumeroTim"
+            }, {
+                "fieldLabel": "Label 'Descrizione TIM Card'",
+                "name": "labelDescrizioneTimCard"
+            }, {
+                "fieldLabel": "Label 'ICCID della TIM Card'",
+                "name": "labelIccidDellaTimCard"
+            }, {
+                "fieldLabel": "Label 'Nome OLO'",
+                "name": "labelNomeOlo"
+            }, {
+                "fieldLabel": "Label 'Numero AOM'",
+                "name": "labelNumeroAOM"
+            }, {
+                "fieldLabel": "Label 'ICCID OLO (parte fissa)'",
+                "name": "labelIccidOloParteFissa"
+            }, {
+                "fieldLabel": "Label 'ICCID Olo (da compilare)'",
+                "name": "labelIccidOloDaCompilare"
+            }]
+        },
+        {
+            "tabTitle": "Modale conferma",
+            "fields": [{
+                "fieldLabel": "Titolo",
+                "name": "modal/title"
+            }, {
+                "fieldLabel": "Label 'Nome Offerta'",
+                "name": "modal/labelNomeOfferta"
+            }, {
+                "fieldLabel": "Label 'Nome Mobile Definitivo'",
+                "name": "modal/labelNomeMobileDefinitivo"
+            }, {
+                "fieldLabel": "Contenuto della modale",
+                "name": "modal/content",
+                "textIsRich": true
+            }, {
+                "fieldLabel": "Pulsante 'Chiudi'",
+                "name": "modal/btnChiudi"
+            }]
+        }
+    ]
+},
+{
+    "name": "lis-form-residenza",
+    "title": "Inserimento residenza",
+    "componentGroup": "LIS Tabaccai",
+    "dialog": [{
+            "tabTitle": "Pulsanti Form",
+            "fields": [{
+                "fieldLabel": "Pulsante 'Torna indietro'",
+                "name": "btnTornaIndietro"
+            }, {
+                "fieldLabel": "Pulsante 'Continua'",
+                "name": "btnContinua"
+            }]
+        },
+        {
+            "tabTitle": "Labels",
+            "fields": [{
+                "fieldLabel": "Label 'Nazione'",
+                "name": "labelNazione"
+            }, {
+                "fieldLabel": "Label 'Provincia'",
+                "name": "labelProvincia"
+            }, {
+                "fieldLabel": "Label 'Comune'",
+                "name": "labelComune"
+            }, {
+                "fieldLabel": "Label 'Particella toponomastica'",
+                "name": "labelParticellaToponomastica"
+            }, {
+                "fieldLabel": "Label 'Indirizzo'",
+                "name": "labelIndirizzo"
+            }, {
+                "fieldLabel": "Label 'N. Civico'",
+                "name": "labelNCivico"
+            }, {
+                "fieldLabel": "Label 'CAP'",
+                "name": "labelCap"
+            }]
+        }
+    ]
+}
+]
