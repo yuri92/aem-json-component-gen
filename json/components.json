@@ -72,43 +72,47 @@
                 }]
             }]
         },{
-            "tabTitle": "Spedizione",
+            "tabTitle": "Codice fiscale",
             "fields": [{
                 "fieldLabel": "Titolo",
-                "name": "spedizione/title"
+                "name": "codiceFiscale/title"
+            },{
+                "fieldLabel": "Label 'Nome e cognome'",
+                "name": "codiceFiscale/labelNomeECognome"
             },{
                 "fieldLabel": "Label 'Nome'",
-                "name": "spedizione/labelNome"
+                "name": "codiceFiscale/labelNome"
             },{
                 "fieldLabel": "Label 'Cognome'",
-                "name": "spedizione/labelCognome"
+                "name": "codiceFiscale/labelCognome"
             },{
-                "fieldLabel": "Label 'Codice fiscale'",
-                "name": "spedizione/labelCodiceFiscale"
+                "fieldLabel": "Label 'Sesso'",
+                "name": "codiceFiscale/labelSesso"
             },{
-                "fieldLabel": "Label 'Comune'",
-                "name": "spedizione/labelComune"
+                "fieldLabel": "Label 'Maschile'",
+                "name": "codiceFiscale/labelMaschile"
             },{
-                "fieldLabel": "Label 'Indirizzo'",
-                "name": "spedizione/labelIndirizzo"
+                "fieldLabel": "Label 'Femminile'",
+                "name": "codiceFiscale/labelFemminile"
             },{
-                "fieldLabel": "Label 'Civico'",
-                "name": "spedizione/labelCivico"
+                "fieldLabel": "Label 'Data di nascita'",
+                "name": "codiceFiscale/labelDataDiNascita"
             },{
-                "fieldLabel": "Label 'Via'",
-                "name": "spedizione/labelVia"
+                "fieldLabel": "Label 'Stato di nascita'",
+                "name": "codiceFiscale/labelStatoDiNascita"
             },{
-                "fieldLabel": "Label 'CAP'",
-                "name": "spedizione/labelCap"
+                "fieldLabel": "Label 'Provincia di nascita'",
+                "name": "codiceFiscale/labelProvinciaDiNascita"
             },{
-                "fieldLabel": "Label 'Email'",
-                "name": "spedizione/labelEmail"
+                "fieldLabel": "Label 'Luogo di nascita'",
+                "name": "codiceFiscale/labelLuogoDiNascita"
             },{
-                "fieldLabel": "Label 'Numero di cellulare'",
-                "name": "spedizione/labelNumeroDiCellulare"
+                "fieldLabel": "Pulsante 'Calcola'",
+                "name": "codiceFiscale/btnCalcola"
             },{
-                "fieldLabel": "Descrizione 'Numero di cellulare'",
-                "name": "spedizione/descNumeroDiCellulare"
+                "fieldLabel": "Disclaimer",
+                "name": "codiceFiscale/disclaimer",
+                "textIsRich": true
             }]
         },{
             "tabTitle": "Spedizione",
