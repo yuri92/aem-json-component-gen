@@ -111,6 +111,45 @@
                 "name": "spedizione/descNumeroDiCellulare"
             }]
         },{
+            "tabTitle": "Spedizione",
+            "fields": [{
+                "fieldLabel": "Titolo",
+                "name": "spedizione/title"
+            },{
+                "fieldLabel": "Label 'Nome'",
+                "name": "spedizione/labelNome"
+            },{
+                "fieldLabel": "Label 'Cognome'",
+                "name": "spedizione/labelCognome"
+            },{
+                "fieldLabel": "Label 'Codice fiscale'",
+                "name": "spedizione/labelCodiceFiscale"
+            },{
+                "fieldLabel": "Label 'Comune'",
+                "name": "spedizione/labelComune"
+            },{
+                "fieldLabel": "Label 'Indirizzo'",
+                "name": "spedizione/labelIndirizzo"
+            },{
+                "fieldLabel": "Label 'Civico'",
+                "name": "spedizione/labelCivico"
+            },{
+                "fieldLabel": "Label 'Via'",
+                "name": "spedizione/labelVia"
+            },{
+                "fieldLabel": "Label 'CAP'",
+                "name": "spedizione/labelCap"
+            },{
+                "fieldLabel": "Label 'Email'",
+                "name": "spedizione/labelEmail"
+            },{
+                "fieldLabel": "Label 'Numero di cellulare'",
+                "name": "spedizione/labelNumeroDiCellulare"
+            },{
+                "fieldLabel": "Descrizione 'Numero di cellulare'",
+                "name": "spedizione/descNumeroDiCellulare"
+            }]
+        },{
             "tabTitle": "Fatturazione",
             "fields": [{
                 "fieldLabel": "Titolo",
@@ -226,7 +265,7 @@
                 "name": "labelNumeroOrdine"
             },{
                 "fieldLabel": "Prossimi step",
-                "name": "Prossimi step",
+                "name": "nextSteps",
                 "textIsRich": true
             }]
         },{
