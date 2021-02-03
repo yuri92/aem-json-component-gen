@@ -6,9 +6,9 @@
         "dialog": [{
             "tabTitle": "Impostazioni",
             "fields": [{
-                "fieldLabel": "Titolo",
-                "name": "title"
-            }, {
+                "fieldLabel": "Label 'Riepilogo acquisto'",
+                "name": "labelRiepilogoAcquisto"
+            },{
                 "fieldLabel": "Label 'Consegna standard'",
                 "name": "labelConsegnaStandard"
             },{
@@ -17,16 +17,150 @@
             },{
                 "fieldLabel": "Label 'Costo totale'",
                 "name": "labelCostoTotale"
-            },{
-                "fieldLabel": "Pulsante 'Continua'",
-                "name": "btnContinua"
             }]
         }, {
             "tabTitle": "Modale 'Costo totale'",
             "fields": [{
                 "fieldLabel": "Contenuto modale",
-                "name": "modals/costoModale/text",
+                "name": "modals/text",
                 "textIsRich": true
+            }]
+        }]
+    },
+
+    {
+        "name": "vpdw-step-1",
+        "title": "Form Step 1",
+        "componentGroup": "Vendita prodotti da WEB",
+        "dialog": [{
+            "tabTitle": "Impostazioni",
+            "fields": [{
+                "fieldLabel": "Title",
+                "name": "title"
+            },{
+                "fieldLabel": "Pulsante 'Continua'",
+                "name": "btnContinua"
+            },{
+                "fieldLabel": "Label 'Note'",
+                "name": "labelNote"
+            },{
+                "fieldLabel": "Label 'Richiedo la fattura'",
+                "name": "labelRichiedoLaFattura"
+            },{
+                "fieldLabel": "Label 'Stesso indirizzo di spedizione'",
+                "name": "labelStessoIndirizzo"
+            },{
+                "fieldLabel": "Label 'Altro indirizzo'",
+                "name": "labelAltroIndirizzo"
+            }]
+        },{
+            "tabTitle": "Spedizione",
+            "fields": [{
+                "fieldLabel": "Titolo",
+                "name": "spedizione/title"
+            },{
+                "fieldLabel": "Label 'Nome'",
+                "name": "spedizione/labelNome"
+            },{
+                "fieldLabel": "Label 'Cognome'",
+                "name": "spedizione/labelCognome"
+            },{
+                "fieldLabel": "Label 'Codice fiscale'",
+                "name": "spedizione/labelCodiceFiscale"
+            },{
+                "fieldLabel": "Label 'Comune'",
+                "name": "spedizione/labelComune"
+            },{
+                "fieldLabel": "Label 'Indirizzo'",
+                "name": "spedizione/labelIndirizzo"
+            },{
+                "fieldLabel": "Label 'Civico'",
+                "name": "spedizione/labelCivico"
+            },{
+                "fieldLabel": "Label 'Via'",
+                "name": "spedizione/labelVia"
+            },{
+                "fieldLabel": "Label 'CAP'",
+                "name": "spedizione/labelCap"
+            },{
+                "fieldLabel": "Label 'Email'",
+                "name": "spedizione/labelEmail"
+            },{
+                "fieldLabel": "Label 'Numero di cellulare'",
+                "name": "spedizione/labelNumeroDiCellulare"
+            },{
+                "fieldLabel": "Descrizione 'Numero di cellulare'",
+                "name": "spedizione/descNumeroDiCellulare"
+            }]
+        },{
+            "tabTitle": "Fatturazione",
+            "fields": [{
+                "fieldLabel": "Titolo",
+                "name": "fatturazione/title"
+            },{
+                "fieldLabel": "Label 'Nome'",
+                "name": "fatturazione/labelNome"
+            },{
+                "fieldLabel": "Label 'Cognome'",
+                "name": "fatturazione/labelCognome"
+            },{
+                "fieldLabel": "Label 'Codice fiscale'",
+                "name": "fatturazione/labelCodiceFiscale"
+            },{
+                "fieldLabel": "Label 'Comune'",
+                "name": "fatturazione/labelComune"
+            },{
+                "fieldLabel": "Label 'Indirizzo'",
+                "name": "fatturazione/labelIndirizzo"
+            },{
+                "fieldLabel": "Label 'Civico'",
+                "name": "fatturazione/labelCivico"
+            },{
+                "fieldLabel": "Label 'Via'",
+                "name": "fatturazione/labelVia"
+            },{
+                "fieldLabel": "Label 'CAP'",
+                "name": "fatturazione/labelCap"
+            }]
+        },{
+            "tabTitle": "Metodo di spedizione",
+            "fields": [{
+                "fieldLabel": "Title",
+                "name": "metodo/title"
+            },{
+                "fieldLabel": "Label 'Spedizione con corriere'",
+                "name": "metodo/tipoSpedizione"
+            },{
+                "fieldLabel": "Prezzo",
+                "name": "metodo/prezzo"
+            },{
+                "fieldLabel": "Contenuto modale",
+                "name": "metodo/modal",
+                "textIsRich": true
+            }]
+        },{
+            "tabTitle": "Informativa privacy",
+            "fields": [{
+                "fieldLabel": "Title",
+                "name": "privacy/title"
+            },{
+                "fieldLabel": "Informativa principale",
+                "name": "privacy/principale",
+                "textIsRich": true
+            },{
+                "fieldLabel": "Consensi",
+                "name": "privacy/consensi",
+                "multifield": [{
+                    "fieldLabel": "Consenso obbligatorio",
+                    "name": "required",
+                    "isCheckbox": true
+                }, {
+                    "fieldLabel": "Codice",
+                    "name": "codice"
+                }, {
+                    "fieldLabel": "Testo",
+                    "name": "testo"
+                }]
             }]
         }]
     }
