@@ -63,6 +63,13 @@
             },{
                 "fieldLabel": "Label 'Altro indirizzo'",
                 "name": "labelAltroIndirizzo"
+            },{
+                "fieldLabel": "Particelle toponomastiche",
+                "name": "particelleToponomastiche",
+                "multifield": [{
+                    "fieldLabel": "Codice",
+                    "name": "codice"
+                }]
             }]
         },{
             "tabTitle": "Spedizione",
