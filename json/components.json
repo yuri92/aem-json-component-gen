@@ -256,6 +256,15 @@
                 "fieldLabel": "Title",
                 "name": "fatturazione/title"
             },{
+                "fieldLabel": "Label 'Nome'",
+                "name": "fatturazione/labelNome"
+            },{
+                "fieldLabel": "Label 'Cognome'",
+                "name": "fatturazione/labelCognome"
+            },{
+                "fieldLabel": "Label 'Codice fiscale'",
+                "name": "fatturazione/labelCodiceFiscale"
+            },{
                 "fieldLabel": "Label 'Indirizzo'",
                 "name": "fatturazione/labelIndirizzo"
             }]
