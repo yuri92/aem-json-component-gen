@@ -6,9 +6,13 @@
         "dialog": [{
             "tabTitle": "Impostazioni",
             "fields": [{
-                "fieldLabel": "Label 'Riepilogo acquisto'",
+                "fieldLabel": "Giorni aggiuntivi",
                 "fieldDescription": "Numero di giorni da sommare ai 'deliveryDays' del prodotto",
                 "name": "settings/giorniAggiuntivi"
+            },{
+                "fieldLabel": "Fascia oraria giorno aggiuntivo",
+                "fieldDescription": "Dopo questo orario, verrà aggiunto di default un giorno in più alla data di consegna",
+                "name": "settings/oraGiornoAggiuntivo"
             }]
         },{
             "tabTitle": "Label",
@@ -201,6 +205,58 @@
             "fields": [{
                 "fieldLabel": "Title",
                 "name": "title"
+            },{
+                "fieldLabel": "Pulsante 'Torna su TIM'",
+                "name": "btn/title"
+            },{
+                "fieldLabel": "Link 'Torna su TIM'",
+                "name": "btn/link"
+            },{
+                "fieldLabel": "Messaggio di successo",
+                "name": "successMessage"
+            },{
+                "fieldLabel": "Label 'Numero ordine'",
+                "name": "labelNumeroOrdine"
+            },{
+                "fieldLabel": "Prossimi step",
+                "name": "Prossimi step",
+                "textIsRich": true
+            }]
+        },{
+            "tabTitle": "Dati intestatario",
+            "fields": [{
+                "fieldLabel": "Label 'Nome'",
+                "name": "intestatario/labelNome"
+            },{
+                "fieldLabel": "Label 'Cognome'",
+                "name": "intestatario/labelCognome"
+            },{
+                "fieldLabel": "Label 'Codice fiscale'",
+                "name": "intestatario/labelCodiceFiscale"
+            },{
+                "fieldLabel": "Label 'E-mail'",
+                "name": "intestatario/labelEmail"
+            },{
+                "fieldLabel": "Label 'Numero di cellulare'",
+                "name": "intestatario/labelNumeroCellulare"
+            },{
+                "fieldLabel": "Label 'Indirizzo'",
+                "name": "intestatario/labelIndirizzo"
+            }]
+        },{
+            "tabTitle": "Dati fatturazione",
+            "fields": [{
+                "fieldLabel": "Title",
+                "name": "fatturazione/title"
+            },{
+                "fieldLabel": "Label 'Indirizzo'",
+                "name": "fatturazione/labelIndirizzo"
+            }]
+        },{
+            "tabTitle": "Modalità pagamento",
+            "fields": [{
+                "fieldLabel": "Title",
+                "name": "pagamento/title"
             }]
         }]
     }
