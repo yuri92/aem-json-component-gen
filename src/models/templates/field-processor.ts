@@ -42,12 +42,24 @@ export class FieldProcessor {
     }
 
     private processTextField(): void {
-        this._xml =  `
+        if(this.field.fieldDescription){
+            this._xml =  `
+                                    <${this.tagName}
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="${this.field.fieldLabel}"
+                                        fieldDescription="${this.field.fieldDescription}"
+                                        name="./${this.field.name}"/>`
+
+        } else {
+
+            this._xml =  `
                                     <${this.tagName}
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                         fieldLabel="${this.field.fieldLabel}"
                                         name="./${this.field.name}"/>`
+        }
     }
 
     private processRichText(): void {

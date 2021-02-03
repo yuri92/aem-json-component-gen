@@ -7,6 +7,13 @@
             "tabTitle": "Impostazioni",
             "fields": [{
                 "fieldLabel": "Label 'Riepilogo acquisto'",
+                "fieldDescription": "Numero di giorni da sommare ai 'deliveryDays' del prodotto",
+                "name": "settings/giorniAggiuntivi"
+            }]
+        },{
+            "tabTitle": "Label",
+            "fields": [{
+                "fieldLabel": "Label 'Riepilogo acquisto'",
                 "name": "labelRiepilogoAcquisto"
             },{
                 "fieldLabel": "Label 'Consegna standard'",
@@ -161,6 +168,39 @@
                     "fieldLabel": "Testo",
                     "name": "testo"
                 }]
+            }]
+        }]
+    },
+
+    {
+        "name": "vpdw-step-2",
+        "title": "Form Step 2",
+        "componentGroup": "Vendita prodotti da WEB",
+        "dialog": [{
+            "tabTitle": "Impostazioni",
+            "fields": [{
+                "fieldLabel": "Title",
+                "name": "title"
+            },{
+                "fieldLabel": "Pulsante 'Acquista'",
+                "name": "btnAcquista"
+            },{
+                "fieldLabel": "Informativa privacy",
+                "name": "privacy",
+                "textIsRich": true
+            }]
+        }]
+    },
+
+    {
+        "name": "vpdw-step-3",
+        "title": "Form Step 3",
+        "componentGroup": "Vendita prodotti da WEB",
+        "dialog": [{
+            "tabTitle": "Impostazioni",
+            "fields": [{
+                "fieldLabel": "Title",
+                "name": "title"
             }]
         }]
     }

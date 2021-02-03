@@ -10,6 +10,7 @@ export interface IComponent {
   }
   export interface IField {
     fieldLabel: string;
+    fieldDescription?: string;
     name: string;
     textIsRich?: boolean;
     isCheckbox?: boolean;
