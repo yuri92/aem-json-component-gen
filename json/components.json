@@ -144,6 +144,9 @@
                 "fieldLabel": "Label 'CAP'",
                 "name": "spedizione/labelCap"
             },{
+                "fieldLabel": "Pulsante 'Inserisci manualmente'",
+                "name": "spedizione/btnInserisciManualmente"
+            },{
                 "fieldLabel": "Label 'Email'",
                 "name": "spedizione/labelEmail"
             },{
@@ -182,6 +185,9 @@
             },{
                 "fieldLabel": "Label 'CAP'",
                 "name": "fatturazione/labelCap"
+            },{
+                "fieldLabel": "Pulsante 'Inserisci manualmente'",
+                "name": "fatturazione/btnInserisciManualmente"
             }]
         },{
             "tabTitle": "Metodo di spedizione",
