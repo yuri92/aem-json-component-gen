@@ -1,0 +1,137 @@
+[
+    {
+        "name": "almnplisp-header",
+        "title": "Header",
+        "componentGroup": "LIS Tabaccai - Preordine",
+        "dialog": [{
+            "tabTitle": "Impostazioni",
+            "fields": [{
+                "fieldLabel": "Testo",
+                "name": "text"
+            }]
+        }]
+    },
+
+    {
+        "name": "almnplisp-form",
+        "title": "Form",
+        "componentGroup": "LIS Tabaccai - Preordine",
+        "dialog": [{
+            "tabTitle": "Impostazioni",
+            "fields": [{
+                "fieldLabel": "Title",
+                "fieldDescription": "Inserisci qui i tuoi dati",
+                "name": "title"
+            },{
+                "fieldLabel": "Pulsante 'Continua'",
+                "name": "btnContinua"
+            }]
+        },{
+            "tabTitle": "Dati personali",
+            "fields": [{
+                "fieldLabel": "Titolo",
+                "name": "datiPersonali/title"
+            },{
+                "fieldLabel": "Label 'Nome'",
+                "name": "datiPersonali/labelNome"
+            },{
+                "fieldLabel": "Label 'Cognome'",
+                "name": "datiPersonali/labelCognome"
+            },{
+                "fieldLabel": "Label 'Codice Fiscale'",
+                "name": "datiPersonali/labelCodiceFiscale"
+            },{
+                "fieldLabel": "Label 'Paese'",
+                "name": "datiPersonali/labelPaese"
+            },{
+                "fieldLabel": "Label 'Provincia'",
+                "name": "datiPersonali/labelProvincia"
+            },{
+                "fieldLabel": "Label 'Comune'",
+                "name": "datiPersonali/labelComune"
+            },{
+                "fieldLabel": "Label 'Data di nascita'",
+                "name": "datiPersonali/labelDataDiNascita"
+            }]
+        },{
+            "tabTitle": "Documenti",
+            "fields": [{
+                "fieldLabel": "Titolo",
+                "name": "documenti/title"
+            },{
+                "fieldLabel": "Label 'Carta identità'",
+                "name": "documenti/labelCartaIdentita"
+            },{
+                "fieldLabel": "Label 'Carta identità elettronica'",
+                "name": "documenti/labelCartaIdentitaElettronica"
+            },{
+                "fieldLabel": "Label 'Patente'",
+                "name": "documenti/labelPatente"
+            },{
+                "fieldLabel": "Label 'Passaporto'",
+                "name": "documenti/labelPassaporto"
+            }]
+        },{
+            "tabTitle": "Tipologia Richiesta",
+            "fields": [{
+                "fieldLabel": "Titolo",
+                "name": "tipologiaRichiesta/title"
+            },{
+                "fieldLabel": "Label 'Voglio mantenere il mio numero'",
+                "name": "tipologiaRichiesta/labelMantenereNumero"
+            },{
+                "fieldLabel": "Label 'Carta identità elettronica'",
+                "name": "tipologiaRichiesta/labelAttivareNuovoNumero"
+            },{
+                "fieldLabel": "Label 'Seleziona operatore'",
+                "name": "tipologiaRichiesta/labelSelezionaOperatore"
+            }]
+        },{
+            "tabTitle": "Descrizione dell'offerta",
+            "fields": [{
+                "fieldLabel": "Titolo",
+                "name": "descrizioneOfferta/title"
+            },{
+                "fieldLabel": "Titolo modale offerta",
+                "name": "descrizioneOfferta/modalTitle"
+            },{
+                "fieldLabel": "Informativa privacy 1",
+                "name": "descrizioneOfferta/infoPrivacy1"
+            },{
+                "fieldLabel": "Label 'E-mail'",
+                "name": "descrizioneOfferta/labelEmail"
+            },{
+                "fieldLabel": "Informativa privacy 2",
+                "name": "descrizioneOfferta/infoPrivacy2"
+            }]
+        }]
+    },
+    
+    {
+        "name": "almnplisp-typ",
+        "title": "Thank you page",
+        "componentGroup": "LIS Tabaccai - Preordine",
+        "dialog": [{
+            "tabTitle": "Impostazioni",
+            "fields": [{
+                "fieldLabel": "Titolo",
+                "name": "title"
+            },{
+                "fieldLabel": "Sottotitolo",
+                "name": "subtitle"
+            },{
+                "fieldLabel": "Label 'Ricevi la nostra mail'",
+                "name": "labelRiceviLaNostraMail"
+            },{
+                "fieldLabel": "Label 'Stampala'",
+                "name": "labelStampala"
+            },{
+                "fieldLabel": "Label 'Vai alla tabaccheria'",
+                "name": "labelVaiAllaTabaccheria"
+            },{
+                "fieldLabel": "Pulsante 'Torna a TIM'",
+                "name": "pulsanteTornaATim"
+            }]
+        }]
+    }
+]
