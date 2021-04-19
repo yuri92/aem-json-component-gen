@@ -21,6 +21,9 @@ export class FieldProcessor {
         } else if (field.multifield) {
             this.processMultifield();
 
+        } else if (field.isPathField) {
+            this.processPathField();
+
         } else {
             this.processTextField();
         }
@@ -57,6 +60,29 @@ export class FieldProcessor {
                                     <${this.tagName}
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="${this.field.fieldLabel}"
+                                        name="./${this.field.name}"/>`
+        }
+    }
+
+    private processPathField(): void {
+        if(this.field.fieldDescription){
+            this._xml =  `
+                                    <${this.tagName}
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        rootPath="/content/dam"
+                                        fieldLabel="${this.field.fieldLabel}"
+                                        fieldDescription="${this.field.fieldDescription}"
+                                        name="./${this.field.name}"/>`
+
+        } else {
+
+            this._xml =  `
+                                    <${this.tagName}
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        rootPath="/content/dam"
                                         fieldLabel="${this.field.fieldLabel}"
                                         name="./${this.field.name}"/>`
         }

@@ -15,5 +15,6 @@ export interface IComponent {
     textIsRich?: boolean;
     isCheckbox?: boolean;
     multifield : IField[];
+    isPathField: boolean;
   }
   

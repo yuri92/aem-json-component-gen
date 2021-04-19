@@ -30,6 +30,122 @@
     },
 
     {
+        "name": "ffsi-step1-hero-banner",
+        "title": "Step 1 Hero Banner",
+        "componentGroup": "Funnel Fisso Standalone Intrattenimento",
+        "dialog": [{
+            "tabTitle": "Impostazioni",
+            "fields": [{
+                "fieldLabel": "Promo label",
+                "name": "promoLabel"
+            },{
+                "fieldLabel": "Promo description",
+                "name": "promoDescription"
+            },{
+                "fieldLabel": "Banner title",
+                "name": "bannerTitle"
+            },{
+                "fieldLabel": "Banner description",
+                "name": "bannerDescription"
+            },{
+                "fieldLabel": "Banner offerte streaming",
+                "name": "offerte",
+                "multifield": [{
+                    "fieldLabel": "Offerta",
+                    "name": "offerta"
+                }]
+            },{
+                "fieldLabel": "Prezzo barrato",
+                "name": "prezzoBarrato"
+            },{
+                "fieldLabel": "Prezzo scontato",
+                "name": "prezzoScontato"
+            },{
+                "fieldLabel": "Label 'al mese'",
+                "name": "labelAlMese"
+            },{
+                "fieldLabel": "Label 'per x mesi, poi x€'",
+                "name": "labelPerXMesi"
+            },{
+                "fieldLabel": "Pulsante 'chiamami'",
+                "name": "pulsanteChiamami"
+            },{
+                "fieldLabel": "Pulsante 'Acquista'",
+                "name": "pulsanteAcquista"
+            },{
+                "fieldLabel": "Scopri di più",
+                "name": "scopriDiPiu"
+            },{
+                "fieldLabel": "Immagine",
+                "isPathField": true,
+                "name": "immagine"
+            }]
+        }]
+    },
+
+    {
+        "name": "ffsi-step1-box-streaming",
+        "title": "Step 1 Box streaming",
+        "componentGroup": "Funnel Fisso Standalone Intrattenimento",
+        "dialog": [{
+            "tabTitle": "Impostazioni",
+            "fields": [{
+                "fieldLabel": "Logo",
+                "isPathField": true,
+                "name": "logo"
+            },{
+                "fieldLabel": "Title",
+                "name": "title"
+            },{
+                "fieldLabel": "Description",
+                "name": "description"
+            },{
+                "fieldLabel": "Immagine",
+                "isPathField": true,
+                "name": "immagine"
+            },{
+                "fieldLabel": "Link 'Scopri di più'",
+                "name": "linkScopriDiPiu"
+            }]
+        }]
+    },
+
+    {
+        "name": "ffsi-step1-box-acquista",
+        "title": "Step 1 Box acquista",
+        "componentGroup": "Funnel Fisso Standalone Intrattenimento",
+        "dialog": [{
+            "tabTitle": "Impostazioni",
+            "fields": [{
+                "fieldLabel": "Immagine",
+                "isPathField": true,
+                "name": "immagine"
+            },{
+                "fieldLabel": "Title",
+                "name": "title"
+            },{
+                "fieldLabel": "Prezzo barrato",
+                "name": "prezzoBarrato"
+            },{
+                "fieldLabel": "Prezzo scontato",
+                "name": "prezzoScontato"
+            },{
+                "fieldLabel": "Label 'al mese'",
+                "name": "labelAlMese"
+            },{
+                "fieldLabel": "Label 'per x mesi, poi x€'",
+                "name": "labelPerXMesi"
+            },{
+                "fieldLabel": "Pulsante 'chiamami'",
+                "name": "pulsanteChiamami"
+            },{
+                "fieldLabel": "Pulsante 'Acquista'",
+                "name": "pulsanteAcquista"
+            }]
+        }]
+    },
+
+    {
         "name": "ffsi-form-step2",
         "title": "Form step 2",
         "componentGroup": "Funnel Fisso Standalone Intrattenimento",
@@ -106,6 +222,52 @@
                 "fieldLabel": "Label 'Express'",
                 "name": "tipoConsegna/labelExpress",
                 "textIsRich": true
+            }]
+        }]
+    },
+
+    {
+        "name": "ffsi-step3",
+        "title": "Step 3",
+        "componentGroup": "Funnel Fisso Standalone Intrattenimento",
+        "dialog": [{
+            "tabTitle": "Box sinistra",
+            "fields": [{
+                "fieldLabel": "Title",
+                "name": "sx/title"
+            },{
+                "fieldLabel": "Description",
+                "textIsRich": true,
+                "name": "sx/description"
+            },{
+                "fieldLabel": "Informazioni utili",
+                "name": "sx/informazioniUtili"
+            },{
+                "fieldLabel": "Informazioni utili - descrizione",
+                "name": "sx/informazioniUtiliDescription"
+            },{
+                "fieldLabel": "Immagine",
+                "isPathField": true,
+                "name": "sx/immagine"
+            }]
+        },
+        {
+            "tabTitle": "Carrello",
+            "fields": [{
+                "fieldLabel": "Label 'Riepilogo ordine'",
+                "name": "cart/labelRiepilogoOrdine"
+            },{
+                "fieldLabel": "Label 'Numero ordine'",
+                "name": "cart/labelNumero"
+            },{
+                "fieldLabel": "Label 'Costo mensile'",
+                "name": "cart/labelCostoMensile"
+            },{
+                "fieldLabel": "Label 'Costo iniziale'",
+                "name": "cart/labelCostoIniziale"
+            },{
+                "fieldLabel": "Label 'Metodo di pagamento'",
+                "name": "cart/labelMetodoDiPagamento"
             }]
         }]
     }
