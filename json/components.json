@@ -1,274 +1,305 @@
 [
     {
-        "name": "ffsi-banner-sicurezza",
-        "title": "Banner sicurezza",
-        "componentGroup": "Funnel Fisso Standalone Intrattenimento",
-        "dialog": [{
-            "tabTitle": "Impostazioni",
-            "fields": [{
-                "fieldLabel": "Testo",
-                "name": "text"
-            }]
-        }]
+        "name": "gls-title",
+        "title": "Title",
+        "componentGroup": "Gestione lead strong",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "title"
+                    }
+                ]
+            }
+        ]
     },
-
     {
-        "name": "ffsi-banner-promo",
-        "title": "Banner promo",
-        "componentGroup": "Funnel Fisso Standalone Intrattenimento",
-        "dialog": [{
-            "tabTitle": "Impostazioni",
-            "fields": [{
-                "fieldLabel": "Banner promo",
-                "name": "promo"
-            },{
-                "fieldLabel": "Testo",
-                "name": "text",
-                "textIsRich": true
-            }]
-        }]
+        "name": "gls-form-dati-personali",
+        "title": "Form - Dati personali",
+        "componentGroup": "Gestione lead strong",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo 'Dati personali'",
+                        "name": "datiPersonali"
+                    },
+                    {
+                        "fieldLabel": "Label 'Numero Fisso TIM'",
+                        "name": "labelNumeroFissoTim"
+                    },
+                    {
+                        "fieldLabel": "Label 'Codice Fiscale'",
+                        "name": "labelCodiceFiscale"
+                    }
+                ]
+            }
+        ]
     },
-
     {
-        "name": "ffsi-step1-hero-banner",
-        "title": "Step 1 Hero Banner",
-        "componentGroup": "Funnel Fisso Standalone Intrattenimento",
-        "dialog": [{
-            "tabTitle": "Impostazioni",
-            "fields": [{
-                "fieldLabel": "Promo label",
-                "name": "promoLabel"
-            },{
-                "fieldLabel": "Promo description",
-                "name": "promoDescription"
-            },{
-                "fieldLabel": "Banner title",
-                "name": "bannerTitle"
-            },{
-                "fieldLabel": "Banner description",
-                "name": "bannerDescription"
-            },{
-                "fieldLabel": "Banner offerte streaming",
-                "name": "offerte",
-                "multifield": [{
-                    "fieldLabel": "Offerta",
-                    "name": "offerta"
-                }]
-            },{
-                "fieldLabel": "Prezzo barrato",
-                "name": "prezzoBarrato"
-            },{
-                "fieldLabel": "Prezzo scontato",
-                "name": "prezzoScontato"
-            },{
-                "fieldLabel": "Label 'al mese'",
-                "name": "labelAlMese"
-            },{
-                "fieldLabel": "Label 'per x mesi, poi x€'",
-                "name": "labelPerXMesi"
-            },{
-                "fieldLabel": "Pulsante 'chiamami'",
-                "name": "pulsanteChiamami"
-            },{
-                "fieldLabel": "Pulsante 'Acquista'",
-                "name": "pulsanteAcquista"
-            },{
-                "fieldLabel": "Scopri di più",
-                "name": "scopriDiPiu"
-            },{
-                "fieldLabel": "Immagine",
-                "isPathField": true,
-                "name": "immagine"
-            }]
-        }]
+        "name": "gls-form-dati-di-contatto",
+        "title": "Form - Dati di contatto",
+        "componentGroup": "Gestione lead strong",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Label 'Indirizzo email'",
+                        "name": "labelIndirizzoEmail"
+                    },
+                    {
+                        "fieldLabel": "Label 'Telefono Mobile'",
+                        "name": "labelTelefonoMobile"
+                    },
+                    {
+                        "fieldLabel": "Description",
+                        "name": "description",
+                        "textIsRich": true
+                    }
+                ]
+            }
+        ]
     },
-
     {
-        "name": "ffsi-step1-box-streaming",
-        "title": "Step 1 Box streaming",
-        "componentGroup": "Funnel Fisso Standalone Intrattenimento",
-        "dialog": [{
-            "tabTitle": "Impostazioni",
-            "fields": [{
-                "fieldLabel": "Logo",
-                "isPathField": true,
-                "name": "logo"
-            },{
-                "fieldLabel": "Title",
-                "name": "title"
-            },{
-                "fieldLabel": "Description",
-                "name": "description"
-            },{
-                "fieldLabel": "Immagine",
-                "isPathField": true,
-                "name": "immagine"
-            },{
-                "fieldLabel": "Link 'Scopri di più'",
-                "name": "linkScopriDiPiu"
-            }]
-        }]
+        "name": "gls-form-indirizzo-consegna",
+        "title": "Form - Indirizzo di consegna",
+        "componentGroup": "Gestione lead strong",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "title"
+                    },
+                    {
+                        "fieldLabel": "Label 'Comune'",
+                        "name": "labelComune"
+                    },
+                    {
+                        "fieldLabel": "Label 'Via / Strada / Piazza",
+                        "name": "labelViaStradaPiazza"
+                    },
+                    {
+                        "fieldLabel": "Label 'N° Civico'",
+                        "name": "labelNCivico"
+                    },
+                    {
+                        "fieldLabel": "Label 'CAP'",
+                        "name": "labelCap"
+                    },
+                    {
+                        "fieldLabel": "Label 'Prov'",
+                        "name": "labelProv"
+                    },
+                    {
+                        "fieldLabel": "Label 'Citofono (opzionale)'",
+                        "name": "labelCitofono"
+                    }
+                ]
+            },
+            {
+                "tabTitle": "Dialog",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "modal/title"
+                    },
+                    {
+                        "fieldLabel": "Descrizione",
+                        "name": "modal/description"
+                    }
+                ]
+            }
+        ]
     },
-
     {
-        "name": "ffsi-step1-box-acquista",
-        "title": "Step 1 Box acquista",
-        "componentGroup": "Funnel Fisso Standalone Intrattenimento",
-        "dialog": [{
-            "tabTitle": "Impostazioni",
-            "fields": [{
-                "fieldLabel": "Immagine",
-                "isPathField": true,
-                "name": "immagine"
-            },{
-                "fieldLabel": "Title",
-                "name": "title"
-            },{
-                "fieldLabel": "Prezzo barrato",
-                "name": "prezzoBarrato"
-            },{
-                "fieldLabel": "Prezzo scontato",
-                "name": "prezzoScontato"
-            },{
-                "fieldLabel": "Label 'al mese'",
-                "name": "labelAlMese"
-            },{
-                "fieldLabel": "Label 'per x mesi, poi x€'",
-                "name": "labelPerXMesi"
-            },{
-                "fieldLabel": "Pulsante 'chiamami'",
-                "name": "pulsanteChiamami"
-            },{
-                "fieldLabel": "Pulsante 'Acquista'",
-                "name": "pulsanteAcquista"
-            }]
-        }]
+        "name": "gls-form-tipo-consegna",
+        "title": "Form - Tipo di consegna",
+        "componentGroup": "Gestione lead strong",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "titolo"
+                    },
+                    {
+                        "fieldLabel": "Tipo di consegna",
+                        "name": "tipoConsegna"
+                    }
+                ]
+            }
+        ]
     },
-
     {
-        "name": "ffsi-form-step2",
-        "title": "Form step 2",
-        "componentGroup": "Funnel Fisso Standalone Intrattenimento",
-        "dialog": [{
-            "tabTitle": "Impostazioni",
-            "fields": [{
-                "fieldLabel": "Title",
-                "name": "title"
-            }]
-        },{
-            "tabTitle": "Dati di contatto",
-            "fields": [{
-                "fieldLabel": "Title",
-                "name": "datiDiContatto/title"
-            },{
-                "fieldLabel": "Titolo modale 'Dati di contatto'",
-                "name": "datiDiContatto/modalTitle"
-            },{
-                "fieldLabel": "Testo modale 'Dati di contatto'",
-                "name": "datiDiContatto/modalText"
-            },{
-                "fieldLabel": "Label 'Indirizzo Email'",
-                "name": "datiDiContatto/labelEmail"
-            },{
-                "fieldLabel": "Label 'Telefono mobile'",
-                "name": "datiDiContatto/labelTelMobile"
-            }]
-        },{
-            "tabTitle": "Indirizzo di consegna",
-            "fields": [{
-                "fieldLabel": "Title",
-                "name": "indirizzoConsegna/title"
-            },{
-                "fieldLabel": "Titolo modale 'Citofono'",
-                "name": "indirizzoConsegna/modalCitofonoTitle"
-            },{
-                "fieldLabel": "Testo modale 'Dati di contatto'",
-                "name": "indirizzoConsegna/modalCitofonoText"
-            },{
-                "fieldLabel": "Label 'Comune'",
-                "name": "indirizzoConsegna/labelComune"
-            },{
-                "fieldLabel": "Label 'Via / Strada / Piazza'",
-                "name": "indirizzoConsegna/labelViaStradaPiazza"
-            },{
-                "fieldLabel": "Label 'Civico'",
-                "name": "indirizzoConsegna/labelCivico"
-            },{
-                "fieldLabel": "Label 'CAP'",
-                "name": "indirizzoConsegna/labelCap"
-            },{
-                "fieldLabel": "Label 'Prov'",
-                "name": "indirizzoConsegna/labelProv"
-            },{
-                "fieldLabel": "Label 'Citofono (opzionale)'",
-                "name": "indirizzoConsegna/labelCitofono"
-            }]
-        },{
-            "tabTitle": "Tipo di consegna",
-            "fields": [{
-                "fieldLabel": "Title",
-                "name": "tipoConsegna/title"
-            },{
-                "fieldLabel": "Titolo modale 'Tipo consegna'",
-                "name": "tipoConsegna/modalTitle"
-            },{
-                "fieldLabel": "Testo modale 'Tipo consegna'",
-                "name": "tipoConsegna/modalText"
-            },{
-                "fieldLabel": "Label 'Gratis standard'",
-                "name": "tipoConsegna/labelGratisStandard",
-                "textIsRich" : true
-            },{
-                "fieldLabel": "Label 'Express'",
-                "name": "tipoConsegna/labelExpress",
-                "textIsRich": true
-            }]
-        }]
+        "name": "gls-form-metodo-pagamento",
+        "title": "Form - Metodo di pagamento",
+        "componentGroup": "Gestione lead strong",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "titolo"
+                    },
+                    {
+                        "fieldLabel": "Description",
+                        "name": "description"
+                    }
+                ]
+            },
+            {
+                "tabTitle": "Modale",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "modal/titolo"
+                    },
+                    {
+                        "fieldLabel": "Description",
+                        "name": "modal/description"
+                    }
+                ]
+            }
+        ]
     },
-
     {
-        "name": "ffsi-step3",
-        "title": "Step 3",
-        "componentGroup": "Funnel Fisso Standalone Intrattenimento",
-        "dialog": [{
-            "tabTitle": "Box sinistra",
-            "fields": [{
-                "fieldLabel": "Title",
-                "name": "sx/title"
-            },{
-                "fieldLabel": "Description",
-                "textIsRich": true,
-                "name": "sx/description"
-            },{
-                "fieldLabel": "Informazioni utili",
-                "name": "sx/informazioniUtili"
-            },{
-                "fieldLabel": "Informazioni utili - descrizione",
-                "name": "sx/informazioniUtiliDescription"
-            },{
-                "fieldLabel": "Immagine",
-                "isPathField": true,
-                "name": "sx/immagine"
-            }]
-        },
-        {
-            "tabTitle": "Carrello",
-            "fields": [{
-                "fieldLabel": "Label 'Riepilogo ordine'",
-                "name": "cart/labelRiepilogoOrdine"
-            },{
-                "fieldLabel": "Label 'Numero ordine'",
-                "name": "cart/labelNumero"
-            },{
-                "fieldLabel": "Label 'Costo mensile'",
-                "name": "cart/labelCostoMensile"
-            },{
-                "fieldLabel": "Label 'Costo iniziale'",
-                "name": "cart/labelCostoIniziale"
-            },{
-                "fieldLabel": "Label 'Metodo di pagamento'",
-                "name": "cart/labelMetodoDiPagamento"
-            }]
-        }]
+        "name": "gls-form-termini-condizioni",
+        "title": "Form - Termini condizioni",
+        "componentGroup": "Gestione lead strong",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "titolo"
+                    },
+                    {
+                        "fieldLabel": "Description",
+                        "name": "description",
+                        "textIsRich": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "gls-note-legali",
+        "title": "Form - Termini condizioni note legali",
+        "componentGroup": "Gestione lead strong",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Note legali",
+                        "name": "items",
+                        "multifield": [
+                            {
+                                "fieldLabel": "Titolo",
+                                "name": "title"
+                            },
+                            {
+                                "fieldLabel": "Descrizione",
+                                "name": "description"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "gls-cart",
+        "title": "Carrello",
+        "componentGroup": "Gestione lead strong",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "title"
+                    }
+                ]
+            },
+            {
+                "tabTitle": "Voci di carrello",
+                "fields": [
+                    {
+                        "fieldLabel": "Voci di carrello",
+                        "name": "items",
+                        "multifield": [
+                            {
+                                "fieldLabel": "Titolo",
+                                "name": "title"
+                            },
+                            {
+                                "fieldLabel": "Prezzo",
+                                "name": "prezzo"
+                            },
+                            {
+                                "fieldLabel": "Descrizione",
+                                "name": "descrizione"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tabTitle": "Totale",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "totale/title"
+                    },{
+                        "fieldLabel": "Descrizione",
+                        "name": "totale/descrizione"
+                    },{
+                        "fieldLabel": "Prezzo",
+                        "name": "totale/prezzo"
+                    },{
+                        "fieldLabel": "Titolo modale",
+                        "name": "totale/modal/title"
+                    },{
+                        "fieldLabel": "Descrizione modale",
+                        "name": "totale/modal/description"
+                    }
+                ]
+            },
+            {
+                "tabTitle": "Costi iniziali",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "costiIniziali/title"
+                    },{
+                        "fieldLabel": "Prezzo",
+                        "name": "costiIniziali/prezzo"
+                    }
+                ]
+            },
+            {
+                "tabTitle": "CTA",
+                "fields": [
+                    {
+                        "fieldLabel": "CTA 'Acquista'",
+                        "name": "ctaAcquista"
+                    },{
+                        "fieldLabel": "CTA 'Serve aiuto?'",
+                        "name": "ctaServeAiuto"
+                    }
+                ]
+            }
+
+        ]
     }
 ]
