@@ -3,18 +3,20 @@ export interface IComponent {
     title: string;
     componentGroup: string;
     dialog?: (ITab)[] | null;
-  }
-  export interface ITab {
+}
+
+export interface ITab {
     tabTitle: string;
     fields?: (IField)[] | null;
-  }
-  export interface IField {
+}
+
+export interface IField {
     fieldLabel: string;
     fieldDescription?: string;
     name: string;
     textIsRich?: boolean;
     isCheckbox?: boolean;
-    multifield : IField[];
+    multifield: IField[];
     isPathField: boolean;
-  }
-  
+    isTextArea: boolean;
+}

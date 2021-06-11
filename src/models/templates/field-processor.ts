@@ -24,6 +24,9 @@ export class FieldProcessor {
         } else if (field.isPathField) {
             this.processPathField();
 
+        } else if (field.isTextArea) {
+            this.processTextArea();
+
         } else {
             this.processTextField();
         }
@@ -60,6 +63,27 @@ export class FieldProcessor {
                                     <${this.tagName}
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="${this.field.fieldLabel}"
+                                        name="./${this.field.name}"/>`
+        }
+    }
+
+    private processTextArea(): void {
+        if(this.field.fieldDescription){
+            this._xml =  `
+                                    <${this.tagName}
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                        fieldLabel="${this.field.fieldLabel}"
+                                        fieldDescription="${this.field.fieldDescription}"
+                                        name="./${this.field.name}"/>`
+
+        } else {
+
+            this._xml =  `
+                                    <${this.tagName}
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                                         fieldLabel="${this.field.fieldLabel}"
                                         name="./${this.field.name}"/>`
         }

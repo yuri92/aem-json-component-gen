@@ -301,5 +301,56 @@
             }
 
         ]
+    },
+    {
+        "name": "gls-wcb",
+        "title": "Web callback",
+        "componentGroup": "Gestione lead strong",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "titolo"
+                    },
+                    {
+                        "fieldLabel": "Description",
+                        "name": "description",
+                        "isTextArea": true
+                    },
+                    {
+                        "fieldLabel": "Label 'Inserisci numero di telefono'",
+                        "name": "form/labelInserisciTelefono"
+                    },
+                    {
+                        "fieldLabel": "CTA Submit form",
+                        "name": "form/submit"
+                    },
+                    {
+                        "fieldLabel": "Titolo 'Chiamaci Gratis'",
+                        "name": "numeroVerde/titolo"
+                    },
+                    {
+                        "fieldLabel": "Numero Verde",
+                        "name": "numeroVerde/numero"
+                    },
+                    {
+                        "fieldLabel": "Description Numero Verde",
+                        "name": "numeroVerde/description",
+                        "isTextArea": true
+                    },
+                    {
+                        "fieldLabel": "Informativa Titolo",
+                        "name": "informativa/title"
+                    },
+                    {
+                        "fieldLabel": "Informativa Description",
+                        "name": "informativa/description",
+                        "isTextArea": true
+                    }
+                ]
+            }
+        ]
     }
 ]
