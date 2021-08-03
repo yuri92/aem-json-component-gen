@@ -131,5 +131,223 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "timfin-form-stepbar",
+        "title": "Form Stepbar",
+        "componentGroup": "Tim Fin",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "title"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "timfin-step1-anagrafica",
+        "title": "Step 1 - Anagrafica",
+        "componentGroup": "Tim Fin",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Label 'Nome'",
+                        "name": "labelNome"
+                    },{
+                        "fieldLabel": "Label 'Cognome'",
+                        "name": "labelCognome"
+                    },{
+                        "fieldLabel": "Label 'Codice Fiscale'",
+                        "name": "labelCodiceFiscale"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "timfin-step1-indirizzo",
+        "title": "Step 1 - Indirizzo",
+        "componentGroup": "Tim Fin",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Label 'Indirizzo non riconosciuto'",
+                        "name": "labelIndNonRiconosciuto"
+                    },{
+                        "fieldLabel": "Label 'Indirizzo riconosciuto'",
+                        "name": "labelIndRiconosciuto"
+                    },{
+                        "fieldLabel": "Label 'Via'",
+                        "name": "labelVia"
+                    },{
+                        "fieldLabel": "Label 'Indirizzo'",
+                        "name": "labelIndirizzo"
+                    },{
+                        "fieldLabel": "Label 'Civico'",
+                        "name": "labelCivico"
+                    },{
+                        "fieldLabel": "Label 'Comune'",
+                        "name": "labelComune"
+                    },{
+                        "fieldLabel": "Label 'Cap'",
+                        "name": "labelCap"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "timfin-step1-email-telefono",
+        "title": "Step 1 - Email e telefono",
+        "componentGroup": "Tim Fin",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Label 'Email'",
+                        "name": "labelEmail"
+                    },{
+                        "fieldLabel": "Label 'Numero di cellulare'",
+                        "name": "labelNumCellulare"
+                    },{
+                        "fieldLabel": "Descrizione 'Numero di cellulare'",
+                        "name": "descNumCellulare"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "timfin-step1-documenti",
+        "title": "Step 1 - Documenti",
+        "componentGroup": "Tim Fin",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "title"
+                    },{
+                        "fieldLabel": "Label pulsante 'Modifica'",
+                        "name": "labelBtnModifica"
+                    },{
+                        "fieldLabel": "Label 'Data scadenza'",
+                        "name": "labelDataScadenza"
+                    },{
+                        "fieldLabel": "Label 'Numero'",
+                        "name": "labelNumero"
+                    },{
+                        "fieldLabel": "Label 'Data di rilascio (GG/MM/AAAA)'",
+                        "name": "labelDataRilascio"
+                    },{
+                        "fieldLabel": "Label 'Data di scadenza (GG/MM/AAAA)'",
+                        "name": "labelDataScadenza"
+                    },{
+                        "fieldLabel": "Label 'Tutti i campi sono obbligatori'",
+                        "name": "labelCampiObbligatori"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "timfin-step1-spedizione",
+        "title": "Step 1 - Spedizione",
+        "componentGroup": "Tim Fin",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "title"
+                    },{
+                        "fieldLabel": "Label 'Spedizione standard'",
+                        "name": "labelSpedizioneStandard"
+                    },{
+                        "fieldLabel": "Label 'Gratuita'",
+                        "name": "labelGratuita"
+                    },{
+                        "fieldLabel": "Label 'Note utili alla consegna'",
+                        "name": "labelNoteConsegna"
+                    },{
+                        "fieldLabel": "Titolo modale",
+                        "name": "modal/title"
+                    },{
+                        "fieldLabel": "Descrizione modale",
+                        "name": "modal/description",
+                        "isTextArea": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "timfin-step1-fattura",
+        "title": "Step 1 - Fattura",
+        "componentGroup": "Tim Fin",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Label 'Richiedo la fattura'",
+                        "name": "labelRichiedoFattura"
+                    },{
+                        "fieldLabel": "Label 'Stesso indirizzo spedizione'",
+                        "name": "labelStessoIndSpedizione"
+                    },{
+                        "fieldLabel": "Label 'Altro indirizzo'",
+                        "name": "labelAltroInd"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "timfin-step1-consensi",
+        "title": "Step 1 - Consensi",
+        "componentGroup": "Tim Fin",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "title"
+                    },{
+                        "fieldLabel": "Descrizione",
+                        "name": "description",
+                        "isTextArea": true
+                    },{
+                        "fieldLabel": "Label pulsante 'Continua'",
+                        "name": "labelBtnContinua"
+                    },{
+                        "fieldLabel": "Lista consensi",
+                        "name": "consensi",
+                        "multifield": [
+                            {
+                                "fieldLabel": "ID consenso",
+                                "name": "id"
+                            },{
+                                "fieldLabel": "Consenso",
+                                "name": "text",
+                                "isTextArea": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]
