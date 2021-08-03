@@ -1,353 +1,132 @@
 [
     {
-        "name": "gls-title",
-        "title": "Title",
-        "componentGroup": "Gestione lead strong",
+        "name": "timfin-la-tua-linea",
+        "title": "La tua Linea",
+        "componentGroup": "Tim Fin",
         "dialog": [
             {
                 "tabTitle": "Impostazioni",
                 "fields": [
                     {
                         "fieldLabel": "Titolo",
-                        "name": "title"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "gls-form-dati-personali",
-        "title": "Form - Dati personali",
-        "componentGroup": "Gestione lead strong",
-        "dialog": [
-            {
-                "tabTitle": "Impostazioni",
-                "fields": [
-                    {
-                        "fieldLabel": "Titolo 'Dati personali'",
-                        "name": "datiPersonali"
-                    },
-                    {
-                        "fieldLabel": "Label 'Numero Fisso TIM'",
-                        "name": "labelNumeroFissoTim"
-                    },
-                    {
-                        "fieldLabel": "Label 'Codice Fiscale'",
-                        "name": "labelCodiceFiscale"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "gls-form-dati-di-contatto",
-        "title": "Form - Dati di contatto",
-        "componentGroup": "Gestione lead strong",
-        "dialog": [
-            {
-                "tabTitle": "Impostazioni",
-                "fields": [
-                    {
-                        "fieldLabel": "Label 'Indirizzo email'",
-                        "name": "labelIndirizzoEmail"
-                    },
-                    {
-                        "fieldLabel": "Label 'Telefono Mobile'",
-                        "name": "labelTelefonoMobile"
-                    },
-                    {
-                        "fieldLabel": "Description",
-                        "name": "description",
-                        "textIsRich": true
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "gls-form-indirizzo-consegna",
-        "title": "Form - Indirizzo di consegna",
-        "componentGroup": "Gestione lead strong",
-        "dialog": [
-            {
-                "tabTitle": "Impostazioni",
-                "fields": [
-                    {
-                        "fieldLabel": "Titolo",
-                        "name": "title"
-                    },
-                    {
-                        "fieldLabel": "Label 'Comune'",
-                        "name": "labelComune"
-                    },
-                    {
-                        "fieldLabel": "Label 'Via / Strada / Piazza",
-                        "name": "labelViaStradaPiazza"
-                    },
-                    {
-                        "fieldLabel": "Label 'N° Civico'",
-                        "name": "labelNCivico"
-                    },
-                    {
-                        "fieldLabel": "Label 'CAP'",
-                        "name": "labelCap"
-                    },
-                    {
-                        "fieldLabel": "Label 'Prov'",
-                        "name": "labelProv"
-                    },
-                    {
-                        "fieldLabel": "Label 'Citofono (opzionale)'",
-                        "name": "labelCitofono"
-                    }
-                ]
-            },
-            {
-                "tabTitle": "Dialog",
-                "fields": [
-                    {
-                        "fieldLabel": "Titolo",
-                        "name": "modal/title"
-                    },
-                    {
-                        "fieldLabel": "Descrizione",
-                        "name": "modal/description"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "gls-form-tipo-consegna",
-        "title": "Form - Tipo di consegna",
-        "componentGroup": "Gestione lead strong",
-        "dialog": [
-            {
-                "tabTitle": "Impostazioni",
-                "fields": [
-                    {
-                        "fieldLabel": "Titolo",
-                        "name": "titolo"
-                    },
-                    {
-                        "fieldLabel": "Tipo di consegna",
-                        "name": "tipoConsegna"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "gls-form-metodo-pagamento",
-        "title": "Form - Metodo di pagamento",
-        "componentGroup": "Gestione lead strong",
-        "dialog": [
-            {
-                "tabTitle": "Impostazioni",
-                "fields": [
-                    {
-                        "fieldLabel": "Titolo",
-                        "name": "titolo"
-                    },
-                    {
-                        "fieldLabel": "Description",
-                        "name": "description"
-                    }
-                ]
-            },
-            {
-                "tabTitle": "Modale",
-                "fields": [
-                    {
-                        "fieldLabel": "Titolo",
-                        "name": "modal/titolo"
-                    },
-                    {
-                        "fieldLabel": "Description",
-                        "name": "modal/description"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "gls-form-termini-condizioni",
-        "title": "Form - Termini condizioni",
-        "componentGroup": "Gestione lead strong",
-        "dialog": [
-            {
-                "tabTitle": "Impostazioni",
-                "fields": [
-                    {
-                        "fieldLabel": "Titolo",
-                        "name": "titolo"
-                    },
-                    {
-                        "fieldLabel": "Description",
-                        "name": "description",
-                        "textIsRich": true
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "gls-note-legali",
-        "title": "Form - Termini condizioni note legali",
-        "componentGroup": "Gestione lead strong",
-        "dialog": [
-            {
-                "tabTitle": "Impostazioni",
-                "fields": [
-                    {
-                        "fieldLabel": "Note legali",
-                        "name": "items",
-                        "multifield": [
-                            {
-                                "fieldLabel": "Titolo",
-                                "name": "title"
-                            },
-                            {
-                                "fieldLabel": "Descrizione",
-                                "name": "description"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "gls-cart",
-        "title": "Carrello",
-        "componentGroup": "Gestione lead strong",
-        "dialog": [
-            {
-                "tabTitle": "Impostazioni",
-                "fields": [
-                    {
-                        "fieldLabel": "Titolo",
-                        "name": "title"
-                    }
-                ]
-            },
-            {
-                "tabTitle": "Voci di carrello",
-                "fields": [
-                    {
-                        "fieldLabel": "Voci di carrello",
-                        "name": "items",
-                        "multifield": [
-                            {
-                                "fieldLabel": "Titolo",
-                                "name": "title"
-                            },
-                            {
-                                "fieldLabel": "Prezzo",
-                                "name": "prezzo"
-                            },
-                            {
-                                "fieldLabel": "Descrizione",
-                                "name": "descrizione"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "tabTitle": "Totale",
-                "fields": [
-                    {
-                        "fieldLabel": "Titolo",
-                        "name": "totale/title"
+                        "name": "title",
+                        "fieldDescription" : "Il campo variabile per il numero di telefono deve essere indicato con ${numero}",
+                        "isTextArea": true
                     },{
                         "fieldLabel": "Descrizione",
-                        "name": "totale/descrizione"
+                        "name": "description",
+                        "fieldDescription" : "Il campo variabile per il nome del prodotto deve essere indicato con ${prodotto}",
+                        "isTextArea": true
                     },{
-                        "fieldLabel": "Prezzo",
-                        "name": "totale/prezzo"
+                        "fieldLabel": "Label pulsante 'Continua'",
+                        "name": "labelBtnContinua"
+                    }
+                ]
+            },
+            {
+                "tabTitle": "Box offerta",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo 'Offerta migliore per te'",
+                        "name": "boxOfferta/title"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "timfin-le-tue-linee",
+        "title": "Le tue linee",
+        "componentGroup": "Tim Fin",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "title",
+                        "isTextArea": true
+                    },{
+                        "fieldLabel": "Descrizione",
+                        "name": "description",
+                        "fieldDescription" : "Il campo variabile per il nome del prodotto deve essere indicato con ${prodotto}",
+                        "isTextArea": true
+                    },{
+                        "fieldLabel": "Label pulsante 'Acquista subito'",
+                        "name": "labelBtnAcquistaSubito"
+                    },{
+                        "fieldLabel": "Label 'Procedi con offerta standard'",
+                        "name": "labelProcediOffertaStandard"
+                    },{
+                        "fieldLabel": "Label pulsante 'Continua'",
+                        "name": "labelBtnContinua"
+                    }
+                ]
+            },
+            {
+                "tabTitle": "Linea selezionata",
+                "fields": [
+                    {
+                        "fieldLabel": "Label 'Linea selezionata'",
+                        "name": "lineaSelezionata/label"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "timfin-cart",
+        "title": "Cart",
+        "componentGroup": "Tim Fin",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "title"
+                    },{
+                        "fieldLabel": "Label 'Costo rata'",
+                        "name": "labelCostoRata"
+                    },{
+                        "fieldLabel": "Label '/mese'",
+                        "name": "labelMese"
+                    },{
+                        "fieldLabel": "Label 'Anticipo'",
+                        "name": "labelAnticipo"
+                    },{
+                        "fieldLabel": "Label 'Consegna standard'",
+                        "name": "labelConsegnaStandard"
+                    },{
+                        "fieldLabel": "Label 'Gratuita'",
+                        "name": "labelGratuita"
+                    },{
+                        "fieldLabel": "Label pulsante 'Continua su TIMFIN'",
+                        "name": "labelBtnContinua"
+                    }
+                ]
+            },{
+                "tabTitle": "Costo totale",
+                "fields": [
+                    {
+                        "fieldLabel": "Label 'Costo totale'",
+                        "name": "costoTotale/labelCostoTotale"
                     },{
                         "fieldLabel": "Titolo modale",
-                        "name": "totale/modal/title"
+                        "name": "costoTotale/modalTitle"
                     },{
                         "fieldLabel": "Descrizione modale",
-                        "name": "totale/modal/description"
-                    }
-                ]
-            },
-            {
-                "tabTitle": "Costi iniziali",
-                "fields": [
-                    {
-                        "fieldLabel": "Titolo",
-                        "name": "costiIniziali/title"
+                        "name": "costoTotale/modalDescription",
+                        "isTextArea": true
                     },{
-                        "fieldLabel": "Prezzo",
-                        "name": "costiIniziali/prezzo"
-                    }
-                ]
-            },
-            {
-                "tabTitle": "CTA",
-                "fields": [
-                    {
-                        "fieldLabel": "CTA 'Acquista'",
-                        "name": "ctaAcquista"
+                        "fieldLabel": "Label '/mese'",
+                        "name": "costoTotale/labelMese"
                     },{
-                        "fieldLabel": "CTA 'Serve aiuto?'",
-                        "name": "ctaServeAiuto"
-                    }
-                ]
-            }
-
-        ]
-    },
-    {
-        "name": "gls-wcb",
-        "title": "Web callback",
-        "componentGroup": "Gestione lead strong",
-        "dialog": [
-            {
-                "tabTitle": "Impostazioni",
-                "fields": [
-                    {
-                        "fieldLabel": "Titolo",
-                        "name": "titolo"
-                    },
-                    {
-                        "fieldLabel": "Description",
-                        "name": "description",
-                        "isTextArea": true
-                    },
-                    {
-                        "fieldLabel": "Label 'Inserisci numero di telefono'",
-                        "name": "form/labelInserisciTelefono"
-                    },
-                    {
-                        "fieldLabel": "CTA Submit form",
-                        "name": "form/submit"
-                    },
-                    {
-                        "fieldLabel": "Titolo 'Chiamaci Gratis'",
-                        "name": "numeroVerde/titolo"
-                    },
-                    {
-                        "fieldLabel": "Numero Verde",
-                        "name": "numeroVerde/numero"
-                    },
-                    {
-                        "fieldLabel": "Description Numero Verde",
-                        "name": "numeroVerde/description",
-                        "isTextArea": true
-                    },
-                    {
-                        "fieldLabel": "Informativa Titolo",
-                        "name": "informativa/title"
-                    },
-                    {
-                        "fieldLabel": "Informativa Description",
-                        "name": "informativa/description",
-                        "isTextArea": true
+                        "fieldLabel": "Label 'Per ${mesi} mesi'",
+                        "name": "costoTotale/labelPerTotMesi"
+                    },{
+                        "fieldLabel": "Label 'in totale'",
+                        "name": "costoTotale/labelInTotale"
                     }
                 ]
             }
