@@ -550,7 +550,99 @@
                     },
                     {
                         "fieldLabel": "Label pulsante 'Continua'",
-                        "name": "labelBtnContinua"
+                        "name": "boxContinua/labelBtnContinua"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "timfin-riepilogo-ko",
+        "title": "Riepilogo KO",
+        "componentGroup": "Tim Fin",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "title",
+                        "isTextArea": true
+                    },{
+                        "fieldLabel": "Descrizione",
+                        "name": "description",
+                        "isTextArea": true
+                    },{
+                        "fieldLabel": "Label pulsante 'Torna in homepage'",
+                        "name": "labelBtnHomepage"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "timfin-riepilogo-confermato",
+        "title": "Riepilogo confermato",
+        "componentGroup": "Tim Fin",
+        "dialog": [
+            {
+                "tabTitle": "Impostazioni",
+                "fields": [
+                    {
+                        "fieldLabel": "Titolo",
+                        "name": "title"
+                    },{
+                        "fieldLabel": "Descrizione",
+                        "name": "description",
+                        "isTextArea": true
+                    },{
+                        "fieldLabel": "Label pulsante 'Torna in homepage'",
+                        "name": "labelBtnHomepage"
+                    },{
+                        "fieldLabel": "Label 'Stampa riepilogo ordine'",
+                        "name": "labelStampa"
+                    }
+                ]
+            },{
+                "tabTitle": "Richiesta NON Completata",
+                "fields": [
+                    {
+                        "fieldLabel": "Descrizione",
+                        "fieldDescription" : "Indicare la data con ${data}",
+                        "name": "notCompleted/description",
+                        "isTextArea": true
+                    },{
+                        "fieldLabel": "Label pulsante 'Completa la richiesta'",
+                        "name": "notCompleted/labelBtnCompletaRichiesta"
+                    }
+                ]
+            },{
+                "tabTitle": "Riepilogo ordine",
+                "fields": [
+                    {
+                        "fieldLabel": "Label 'Anticipo'",
+                        "name": "riepilogo/labelAnticipo"
+                    },{
+                        "fieldLabel": "Label 'Consegna'",
+                        "name": "riepilogo/labelConsegna"
+                    },{
+                        "fieldLabel": "Label 'Pagato con'",
+                        "name": "riepilogo/labelPagatoCon"
+                    },{
+                        "fieldLabel": "Label 'Costo rata'",
+                        "name": "riepilogo/labelCostoRata"
+                    },{
+                        "fieldLabel": "Label 'TAEG'",
+                        "name": "riepilogo/labelTaeg"
+                    },{
+                        "fieldLabel": "Label 'Numero rate'",
+                        "name": "riepilogo/labelNumeroRate"
+                    },{
+                        "fieldLabel": "Label 'Totale rata'",
+                        "name": "riepilogo/labelTotRata"
+                    },{
+                        "fieldLabel": "Label 'Totale complessivo'",
+                        "name": "riepilogo/labelTotComplessivo"
                     }
                 ]
             }
