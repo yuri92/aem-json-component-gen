@@ -12,7 +12,7 @@ const cmpToBuild: IComponent[] = JSON.parse(fs.readFileSync(jsonPath).toString()
 
 cmpToBuild.forEach(component => {
     const componentFolder = path.join(__dirname, '..', 'json', 'generated', component.name);
-    fs.rmdirSync(componentFolder, {recursive : true})
+    //fs.rmdirSync(componentFolder, {recursive : true})
     fs.mkdirSync(componentFolder, {recursive : true});
 
     // creato .content.xml
@@ -25,11 +25,12 @@ cmpToBuild.forEach(component => {
     const dialogFolder = path.join(componentFolder, '_cq_dialog')
     const dialogFile = path.join(dialogFolder, '.content.xml');
 
-    fs.mkdirSync(dialogFolder);
+    //fs.mkdirSync(dialogFolder);
     fs.writeFileSync(dialogFile, new DialogTemplate(component).xml)
 
     //creo il file html
-    fs.writeFileSync(path.join(componentFolder, component.name + '.html'), new ComponentHtmlTemplate(component).xml);
+    // fs.writeFileSync(path.join(componentFolder, component.name + '.html'), new ComponentHtmlTemplate(component).xml);
+    fs.writeFileSync(path.join(componentFolder, component.name + '.html'), '');
 
 });
 

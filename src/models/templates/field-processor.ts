@@ -10,7 +10,7 @@ export class FieldProcessor {
 
     constructor(field: IField) {
         this.field = field;
-        this.tagName = field.name.split('/')[field.name.split('/').length - 1];
+        this.tagName = field.name.split('/')[field.name.split('/').length - 1] + '_' + randomString(5,'A#');
         
         if (field.textIsRich) {
             this.processRichText();
